@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300..700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"تفاصيل الديكور","alternateName":"Details decoration","description":"مركز الديكور الداخلي والفنون: تصميم وتنفيذ وإشراف واستشارات ومعارض وتدريب.","telephone":"+966590599060","address":{"@type":"PostalAddress","streetAddress":"شارع خالد بن الوليد، حي المصيف","addressLocality":"تبوك","postalCode":"47321","addressCountry":"SA"},"openingHours":"Mo-Su 17:00-22:30","image":"assets/facade-night.jpg","sameAs":["https://www.instagram.com/decorationdetails.s/","https://www.tiktok.com/@details_decor","https://www.snapchat.com/@decor.details"]}
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"تفاصيل الديكور","alternateName":"Details decoration","description":"مركز الديكور الداخلي والفنون: تصميم وتنفيذ وإشراف واستشارات ومعارض وتدريب.","telephone":"+966590599060","address":{"@type":"PostalAddress","streetAddress":"شارع خالد بن الوليد، حي المصيف","addressLocality":"تبوك","postalCode":"47321","addressCountry":"SA"},"openingHours":"Mo-Su 17:00-22:30","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"420"},"image":"assets/facade-night.jpg","sameAs":["https://www.instagram.com/decorationdetails.s/","https://www.tiktok.com/@details_decor","https://www.snapchat.com/@decor.details"]}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"هل أرى التصميم قبل التنفيذ؟","acceptedAnswer":{"@type":"Answer","text":"نعم، نصمم المشروع ببرامج ثلاثية الأبعاد ونعرضه في قاعة العرض قبل التنفيذ."}},{"@type":"Question","name":"ما الذي يشمله الضمان؟","acceptedAnswer":{"@type":"Answer","text":"جودة المنتج ودقة التركيب مع استخدام أجود الخامات."}},{"@type":"Question","name":"هل تنسيق المكان بعد التنفيذ مدفوع؟","acceptedAnswer":{"@type":"Answer","text":"لا، تنسيق المكان خدمة مجانية للعميل."}}]}
@@ -278,6 +278,10 @@ footer img.wm{height:44px;width:auto;margin-bottom:1rem}
 footer h4{color:#fff;font-weight:500;margin-bottom:.9rem;font-family:var(--disp)}
 footer ul{list-style:none;display:grid;gap:.5rem;font-size:.95rem}
 footer ul a:hover{color:var(--lav-2)}
+.ficons{display:flex;gap:.6rem;margin-top:1.3rem}
+.ficons a{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.14);display:grid;place-items:center;color:#d8d4cd;transition:all .45s var(--ease)}
+.ficons a:hover{background:var(--lav);border-color:var(--lav);color:#fff;transform:translateY(-3px)}
+.ficons svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 footer .bot{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.85rem;border-top:1px solid rgba(255,255,255,.06);padding-top:1.4rem}
 .wa-fab{position:fixed;bottom:1.4rem;inset-inline-end:1.6rem;z-index:80;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 16px 40px -12px rgba(37,211,102,.6);transition:transform .5s var(--ease)}
 .wa-fab:hover{transform:scale(1.08)}
@@ -315,6 +319,47 @@ dialog.lb .nv.prev{inset-inline-end:-.2rem}dialog.lb .nv.next{inset-inline-start
 dialog.lb figcaption{position:absolute;bottom:.8rem;inset-inline:0;text-align:center;color:#fff;font-size:.9rem;text-shadow:0 2px 10px rgba(0,0,0,.6)}
 @media (max-width:1000px){.steps{grid-template-columns:1fr 1fr}.steps li::after{display:none}.hero .wrap{grid-template-columns:1fr}.logo-stage{max-width:400px}}
 @media (max-width:760px){.steps{grid-template-columns:1fr}.process,.faq{padding:5rem 0}.logo-stage{max-width:230px;margin-top:0;order:-1}.hero .wrap{gap:1.2rem}.hero h1{font-size:1.95rem}.logo-stage .wm img{height:44px}.stats{gap:1.2rem}}
+
+
+/* REVIEWS */
+.reviews{padding:7rem 0;background:var(--paper)}
+.rhead{display:grid;grid-template-columns:1fr;gap:2rem;align-items:end;margin-bottom:2.5rem}
+.score{display:grid;justify-items:center;align-content:center;gap:.2rem;padding:1.6rem;border-radius:1.4rem;background:var(--ink);color:#fff;border:1px solid transparent;transition:transform .6s var(--ease),box-shadow .6s var(--ease)}
+.score:hover{transform:translateY(-4px);box-shadow:0 30px 50px -30px rgba(30,20,60,.3)}
+.score b{font-size:2.6rem;font-weight:500;line-height:1.1}
+.stars{color:#e8b53a;letter-spacing:0;font-size:.95rem}
+.stars.big{font-size:1.2rem}
+.score small{color:#b5b1aa;font-size:.85rem}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.rev{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:1.4rem;padding:1.5rem;margin:0;display:grid;gap:1rem;align-content:start;transition:transform .6s var(--ease),box-shadow .6s var(--ease)}
+.rev:hover{transform:translateY(-5px);box-shadow:0 30px 50px -30px rgba(30,20,60,.25)}
+.rev .rh{display:flex;align-items:center;gap:.8rem}
+.rev .rh>div{flex:1;line-height:1.4}
+.rev .rh b{font-weight:500;display:block}.rev .rh small{color:var(--stone);font-size:.8rem}
+.av{flex:none;width:42px;height:42px;border-radius:50%;background:var(--lav-soft);color:var(--lav);display:grid;place-items:center;font-weight:600;font-family:var(--disp)}
+.rev blockquote{margin:0;color:var(--graphite);font-size:.98rem;line-height:1.85;position:relative;padding-inline-start:1rem;border-inline-start:2px solid var(--lav-soft)}
+.ract{text-align:center;margin-top:2rem}
+/* JOURNEY */
+.journey{height:320vh;position:relative;background:var(--ink)}
+.journey .sticky{position:sticky;top:0;height:100dvh;overflow:hidden;contain:paint;color:#fff;--p:0}
+.journey .sky{position:absolute;inset:0;transition:none}
+.journey .l1{background:linear-gradient(180deg,#d8c3a0 0%,#caa878 60%,#b8925e 100%);opacity:clamp(0,calc(1 - var(--p)*2),1)}
+.journey .l2{background:linear-gradient(180deg,#7f66b8 0%,#9a82cc 50%,#c4b1df 100%);opacity:clamp(0,calc(1 - abs(var(--p) - .5)*2.2),1)}
+.journey .l3{background:linear-gradient(180deg,#070712 0%,#17153a 55%,#4a3d85 100%);opacity:clamp(0,calc(var(--p)*2 - 1),1)}
+.journey .dunes{position:absolute;inset-inline:0;bottom:0;height:38vh;background:radial-gradient(120% 100% at 30% 100%,rgba(0,0,0,.22),transparent 60%),radial-gradient(90% 90% at 80% 110%,rgba(0,0,0,.25),transparent 60%);opacity:calc(.9 - var(--p)*.6)}
+.journey .orb{position:absolute;inset-inline-start:50%;bottom:calc(8vh + var(--p)*58vh);width:clamp(90px,14vw,160px);aspect-ratio:1;border-radius:50%;translate:-50% 0;background:radial-gradient(circle at 40% 35%,#fff7e0,#f2c46b 55%,rgba(242,196,107,.2) 80%);box-shadow:0 0 80px 20px rgba(255,220,140,.35);filter:saturate(calc(1 - var(--p)*.7)) brightness(calc(1 + var(--p)*.3))}
+.journey .stars-field{position:absolute;inset:0;opacity:clamp(0,calc(var(--p)*2 - 1),1);background-image:radial-gradient(1.5px 1.5px at 10% 20%,#fff,transparent),radial-gradient(1px 1px at 30% 60%,#fff,transparent),radial-gradient(2px 2px at 50% 25%,#fff,transparent),radial-gradient(1px 1px at 70% 70%,#fff,transparent),radial-gradient(1.5px 1.5px at 85% 35%,#fff,transparent),radial-gradient(1px 1px at 20% 85%,#fff,transparent),radial-gradient(1.5px 1.5px at 60% 90%,#fff,transparent),radial-gradient(1px 1px at 92% 80%,#fff,transparent),radial-gradient(1px 1px at 40% 45%,#fff,transparent)}
+.jwrap{position:relative;height:100%;display:grid;align-content:center}
+.jstep{grid-area:1/1;max-width:34rem;opacity:0;transform:translateY(24px);transition:opacity .4s,transform .6s var(--ease);text-shadow:0 2px 20px rgba(0,0,0,.25)}
+.jstep.on{opacity:1;transform:none}
+.jstep h3{font-size:clamp(1.8rem,4vw,3rem);font-weight:500;line-height:1.35;margin:.4rem 0 .6rem}
+.jstep p{font-size:1.12rem;max-width:48ch;color:rgba(255,255,255,.9)}
+.jk{display:inline-block;font-size:.8rem;padding:.25rem .8rem;border-radius:999px;background:rgba(255,255,255,.18);backdrop-filter:blur(6px)}
+.jbar{position:absolute;bottom:3rem;inset-inline-start:0;width:min(200px,40vw);height:2px;background:rgba(255,255,255,.25)}
+.jbar i{position:absolute;inset-inline-start:0;top:0;height:100%;width:100%;background:#fff;transform-origin:right;transform:scaleX(var(--p))}
+@media (max-width:1000px){.rgrid{grid-template-columns:1fr 1fr}}
+@media (max-width:760px){.rgrid{grid-template-columns:1fr}.reviews{padding:5rem 0}.journey{height:260vh}.journey .orb{inset-inline-start:78%;bottom:calc(6vh + var(--p)*40vh);width:80px}.jstep{padding-bottom:6rem}}
+@media (prefers-reduced-motion:reduce){.journey{height:auto}.journey .sticky{position:relative;height:auto;padding:5rem 0;--p:.5}.jstep{position:static;opacity:1;transform:none;margin-bottom:2rem}.jwrap{display:block}}
 
 /* REVEAL */
 .rv{opacity:0;transform:translateY(36px);transition:opacity 1s var(--ease-out),transform 1s var(--ease-out)}
@@ -384,6 +429,7 @@ dialog.lb figcaption{position:absolute;bottom:.8rem;inset-inline:0;text-align:ce
       <li><a href="#gallery">المعرض</a></li>
       <li><a href="#training">التدريب</a></li>
       <li><a href="#guarantee">الضمان</a></li>
+      <li><a href="#reviews">الآراء</a></li>
       <li><a href="#partners">شركاء النجاح</a></li>
       <li><a href="#faq">الأسئلة</a></li>
     </ul>
@@ -396,6 +442,7 @@ dialog.lb figcaption{position:absolute;bottom:.8rem;inset-inline:0;text-align:ce
     <li><a href="#gallery">المعرض</a></li>
     <li><a href="#training">التدريب</a></li>
     <li><a href="#guarantee">الضمان</a></li>
+    <li><a href="#reviews">الآراء</a></li>
     <li><a href="#partners">شركاء النجاح</a></li>
     <li><a href="#contact">تواصل معنا</a></li>
   </ul>
@@ -462,6 +509,22 @@ dialog.lb figcaption{position:absolute;bottom:.8rem;inset-inline:0;text-align:ce
         </g>
       </svg>
       <div class="cap"><span>الفن الإسلامي</span><span class="en">Khatam · 8</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- LAVENDER JOURNEY -->
+<section class="journey" id="journey" aria-label="رحلة اللون الخزامي">
+  <div class="sticky">
+    <div class="sky l1"></div><div class="sky l2"></div><div class="sky l3"></div>
+    <div class="dunes"></div>
+    <div class="orb"></div>
+    <div class="stars-field" aria-hidden="true"></div>
+    <div class="jwrap wrap">
+      <div class="jstep s1"><span class="jk">01 · الصحراء</span><h3>أخذ هذا الحلم لون الخزامى</h3><p>الذي يكسو صحراء وطن قادر على صنع المستحيل.</p></div>
+      <div class="jstep s2"><span class="jk">02 · الطيف</span><h3>اللون الذي نراه في نهاية كل طيف</h3><p>يدل على استمرار الحلم والطموح، لون الاعتدال والوضوح ونفاذ البصيرة والشغف والذكاء والحب والحكمة.</p></div>
+      <div class="jstep s3"><span class="jk">03 · السماء</span><h3>قاعدة التوازن اللوني</h3><p>اللون الذي يحمل قاعدة التوازن اللوني بين السماء والأرض.</p></div>
+      <div class="jbar" aria-hidden="true"><i></i></div>
     </div>
   </div>
 </section>
@@ -578,6 +641,34 @@ dialog.lb figcaption{position:absolute;bottom:.8rem;inset-inline:0;text-align:ce
   </div>
 </section>
 
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="rhead">
+      <div>
+        <div class="eyebrow rv">آراء العملاء</div>
+        <h2 class="h2 rv d1">تقييم مميز على خرائط Google</h2>
+        <p class="lead rv d2">آراء حقيقية من عملاء نفّذنا لهم أعمالهم، منشورة على صفحة المركز في خرائط Google.</p>
+      </div>
+    </div>
+    <div class="rgrid">
+      <figure class="rev rv"><div class="rh"><span class="av">و</span><div><b>وعد ماجد</b><small>قبل شهر · <span class="en">Google</span></small></div><span class="stars" aria-label="5 نجوم">★★★★★</span></div><blockquote>تجربة أكثر من رائعة سويت عندهم لوحة وطلعت أجمل مما توقعت. جودة الشغل ممتازة والاهتمام بأدق التفاصيل. تعاملهم راقي ومتعاونين وحريصين على رضا العميل. أنصح فيهم بكل ثقةوأكيد مو آخر تعامل معهم. شكرًا لكم على الإبداع والاحترافية.</blockquote></figure>
+      <figure class="rev rv"><div class="rh"><span class="av">C</span><div><b>Checkmate</b><small>قبل 3 أشهر · <span class="en">Google</span></small></div><span class="stars" aria-label="5 نجوم">★★★★★</span></div><blockquote>ماشاء الله للامانه ماهو خساره الشغل عندهم المدخل حقي سويته من عندهم القطع والخشم والمرايا عندهم كل شي فخم والتنفيذ اكثر من رائع
+
+وتعامل المهندسه ساره رائع جدا ومتعاونه ودقه بالمواعيد وعطتنا اراء كثيره</blockquote></figure>
+      <figure class="rev rv"><div class="rh"><span class="av">م</span><div><b>مشاعل</b><small>قبل 11 شهرًا · <span class="en">Google</span></small></div><span class="stars" aria-label="5 نجوم">★★★★★</span></div><blockquote>طاقم متكامل نبتدي من أ.رهف الراقية و مُنجزة تبارك الرحمن والمهندسة سارة فهمت التفاصيل بكل احترافية وصممت تصميم يليق بالمكان اللي اخترته ونفس الافكار اللي ابيها وسريعين جدا بالتركيب حقيقي شكرا لكم على هذا الرقي والكرم</blockquote></figure>
+      <figure class="rev rv"><div class="rh"><span class="av">ب</span><div><b>بدر العيد</b><small>قبل 7 أشهر · <span class="en">Google</span></small></div><span class="stars" aria-label="5 نجوم">★★★★★</span></div><blockquote>ماشاء الله تبارك الله شغلهم بطل ،،والتميز عندهم في دقة المواعيد والدقة في التركيب. شكراً لفريق العمل المتميز في اداء عملهم.</blockquote></figure>
+      <figure class="rev rv"><div class="rh"><span class="av">م</span><div><b>محمد الحربي</b><small>قبل 5 أشهر · <span class="en">Google</span></small></div><span class="stars" aria-label="5 نجوم">★★★★★</span></div><blockquote>الشغل ممتاز جدا يعطيكم العافية
+وحسن التعامل والالتزام في الموعد
+شكرا للجميع</blockquote></figure>
+      <a class="score rv d3" href="https://search.google.com/local/reviews?placeid=ChIJB8i8p2CtqRURnztroq0fHCE" target="_blank" rel="noopener">
+        <b class="num">4.8</b><span class="stars big">★★★★★</span><small>من <span class="num">420</span> تقييماً · اقرأ الكل</small>
+      </a>
+    </div>
+    <div class="ract rv"><a class="btn ghost" href="https://search.google.com/local/writereview?placeid=ChIJB8i8p2CtqRURnztroq0fHCE" target="_blank" rel="noopener">شاركنا رأيك على Google</a></div>
+  </div>
+</section>
+
 <!-- PARTNERS -->
 <section class="partners" id="partners">
   <div class="wrap">
@@ -626,7 +717,7 @@ dialog.lb figcaption{position:absolute;bottom:.8rem;inset-inline:0;text-align:ce
       <div class="eyebrow">تواصل معنا</div>
       <h2 class="h2">زورونا في المركز، أو ابدأ مشروعك من هنا</h2>
       <div class="info">
-        <a href="tel:+966590599060"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></span><div style="display:block;padding:0;border:0"><small>اتصال مباشر</small><b class="num">059 059 9060</b></div></a>
+        <a href="tel:+966590599060"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></span><div style="display:block;padding:0;border:0"><small>اتصال مباشر</small><b><span class="num">059 059 9060</span> · <span class="num">014 429 0020</span></b></div></a>
         <a href="https://maps.google.com/?q=%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84+%D8%A7%D9%84%D8%AF%D9%8A%D9%83%D9%88%D8%B1+%D8%AA%D8%A8%D9%88%D9%83" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div style="display:block;padding:0;border:0"><small>العنوان</small><b>شارع خالد بن الوليد، حي المصيف، تبوك 47321</b></div></a>
         <div><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div style="display:block;padding:0;border:0"><small>أوقات العمل</small><b>يومياً من <span class="num">5:00</span> مساءً إلى <span class="num">10:30</span> مساءً</b></div></div>
       </div>
@@ -657,14 +748,21 @@ dialog.lb figcaption{position:absolute;bottom:.8rem;inset-inline:0;text-align:ce
       <div>
         <img class="wm" src="assets/wordmark-white.png" alt="تفاصيل الديكور">
         <p style="max-width:40ch;font-size:.95rem">مركز الديكور الداخلي والفنون في تبوك. تصميم، تنفيذ، إشراف، استشارات، معارض، وتدريب.</p>
+        <div class="ficons" aria-label="روابط التواصل">
+          <a href="https://www.instagram.com/decorationdetails.s/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://maps.google.com/?cid=2385816733231037343" target="_blank" rel="noopener" aria-label="الموقع على خرائط Google" title="الموقع على الخريطة"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></a>
+          <a href="https://www.tiktok.com/@details_decor" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24"><path d="M14 4v9.5a3.5 3.5 0 11-3.5-3.5"/><path d="M14 4c.5 2.5 2.2 4 4.5 4.3"/></svg></a>
+          <a href="https://www.snapchat.com/@decor.details" target="_blank" rel="noopener" aria-label="Snapchat" title="Snapchat"><svg viewBox="0 0 24 24"><path d="M12 3c3 0 4.5 2.2 4.5 5v2.3c.8.3 1.7.1 2.3-.2-.2.9-1.2 1.4-2 1.7.7 1.6 2.2 2.6 3.7 2.9-.5.9-1.8 1-2.6 1.2-.2.6-.3 1.2-.7 1.3-1 .2-2-.2-3 .6-.7.6-1.4.9-2.2.9s-1.5-.3-2.2-.9c-1-.8-2-.4-3-.6-.4-.1-.5-.7-.7-1.3-.8-.2-2.1-.3-2.6-1.2 1.5-.3 3-1.3 3.7-2.9-.8-.3-1.8-.8-2-1.7.6.3 1.5.5 2.3.2V8c0-2.8 1.5-5 4.5-5z"/></svg></a>
+          <a href="https://wa.me/966590599060" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 00-7.7 13.6L3 21l4.5-1.2A9 9 0 1012 3z"/><path d="M9 9.5c.3 2.5 2.6 4.8 5.2 5.2l1.3-1.3-2-1-.9.9c-1-.4-1.8-1.2-2.2-2.2l.9-.9-1-2L9 9.5z"/></svg></a>
+        </div>
       </div>
       <div>
         <h4>الأقسام</h4>
-        <ul><li><a href="#story">قصتنا</a></li><li><a href="#services">خدماتنا</a></li><li><a href="#gallery">المعرض</a></li><li><a href="#training">التدريب</a></li><li><a href="#partners">شركاء النجاح</a></li></ul>
+        <ul><li><a href="#story">قصتنا</a></li><li><a href="#services">خدماتنا</a></li><li><a href="#gallery">المعرض</a></li><li><a href="#training">التدريب</a></li><li><a href="#reviews">آراء العملاء</a></li><li><a href="#partners">شركاء النجاح</a></li></ul>
       </div>
       <div>
         <h4>تواصل</h4>
-        <ul><li><a href="tel:+966590599060" class="num">059 059 9060</a></li><li>شارع خالد بن الوليد، المصيف، تبوك</li><li><a href="https://www.instagram.com/decorationdetails.s/" target="_blank" rel="noopener">@decorationdetails.s</a></li></ul>
+        <ul><li><a href="tel:+966590599060" class="num">059 059 9060</a></li><li><a href="tel:+966144290020" class="num">014 429 0020</a></li><li><a href="https://maps.google.com/?cid=2385816733231037343" target="_blank" rel="noopener">شارع خالد بن الوليد، المصيف، تبوك</a></li><li><a href="https://www.instagram.com/decorationdetails.s/" target="_blank" rel="noopener">@decorationdetails.s</a></li></ul>
       </div>
     </div>
     <div class="bot"><span>© <span class="num">2026</span> تفاصيل الديكور. جميع الحقوق محفوظة.</span><span class="en">Details decoration · Tabuk</span></div>
@@ -683,6 +781,10 @@ try{
     document.querySelectorAll('.dark,.hero,.marq,footer').forEach(function(s){var r=s.getBoundingClientRect();if(r.top<=60&&r.bottom>=60)dark=true;});
     nav.classList.toggle('dk',dark);document.getElementById('navlogo').src=dark?'assets/wordmark-white.png':'assets/wordmark-dark.png';}
   addEventListener('scroll',onScroll,{passive:true});onScroll();
+  // lavender journey
+  var J=document.getElementById('journey'),JS=J.querySelector('.sticky'),steps=J.querySelectorAll('.jstep');
+  function jupd(){var r=J.getBoundingClientRect();var total=J.offsetHeight-innerHeight;var p=Math.min(1,Math.max(0,-r.top/total));JS.style.setProperty('--p',p.toFixed(4));var k=p<.33?0:p<.66?1:2;steps.forEach(function(st,i){st.classList.toggle('on',i===k);});}
+  addEventListener('scroll',jupd,{passive:true});addEventListener('resize',jupd);jupd();
   // menu
   var b=document.getElementById('burger'),m=document.getElementById('menu');
   b.addEventListener('click',function(){var o=m.classList.toggle('open');b.classList.toggle('x',o);b.setAttribute('aria-expanded',o);m.setAttribute('aria-hidden',!o);document.body.style.overflow=o?'hidden':'';});
