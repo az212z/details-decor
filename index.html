@@ -7,7 +7,7 @@
 <meta name="description" content="تفاصيل الديكور في تبوك: تصميم وتنفيذ الديكور الداخلي والخارجي، الاستشارات، المعارض الفنية، تصميم الهويات، والتدريب. أكثر من 12,000 عميل وضمان على جودة المنتج ودقة التركيب.">
 <meta property="og:title" content="تفاصيل الديكور | Details decoration">
 <meta property="og:description" content="حينما تلتقي عراقة التصميم وهوية التاريخ. مركز الديكور الداخلي والفنون في تبوك.">
-<meta property="og:image" content="assets/facade-night.jpg">
+<meta property="og:image" content="assets/storefront.jpg">
 <meta name="theme-color" content="#0b0b0c">
 <link rel="icon" href="assets/emblem-black.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +15,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300..700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"LocalBusiness","name":"تفاصيل الديكور","alternateName":"Details decoration","description":"مركز الديكور الداخلي والفنون: تصميم وتنفيذ وإشراف واستشارات ومعارض وتدريب.","telephone":"+966590599060","address":{"@type":"PostalAddress","streetAddress":"شارع خالد بن الوليد، حي المصيف","addressLocality":"تبوك","postalCode":"47321","addressCountry":"SA"},"openingHours":"Mo-Su 17:00-22:30","image":"assets/facade-night.jpg","sameAs":["https://www.instagram.com/decorationdetails.s/","https://www.tiktok.com/@details_decor","https://www.snapchat.com/@decor.details"]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"هل أرى التصميم قبل التنفيذ؟","acceptedAnswer":{"@type":"Answer","text":"نعم، نصمم المشروع ببرامج ثلاثية الأبعاد ونعرضه في قاعة العرض قبل التنفيذ."}},{"@type":"Question","name":"ما الذي يشمله الضمان؟","acceptedAnswer":{"@type":"Answer","text":"جودة المنتج ودقة التركيب مع استخدام أجود الخامات."}},{"@type":"Question","name":"هل تنسيق المكان بعد التنفيذ مدفوع؟","acceptedAnswer":{"@type":"Answer","text":"لا، تنسيق المكان خدمة مجانية للعميل."}}]}
 </script>
 <style>
 @property --ang{syntax:"<angle>";inherits:false;initial-value:0deg}
@@ -35,7 +38,7 @@ h1,h2,h3{font-family:var(--disp);line-height:1.4;font-weight:500}
 .en{font-family:var(--disp);direction:ltr;unicode-bidi:isolate}
 .num{font-family:var(--disp);font-feature-settings:"locl" 0;direction:ltr;unicode-bidi:isolate;font-variant-numeric:tabular-nums}
 .wrap{width:var(--w);margin-inline:auto}
-.hero,.marq,.logo-rows,.story,.guarantee,.bento figure,.seal,.hero .media,.starbox{overflow:hidden;contain:paint}
+.hero,.marq,.logo-rows,.story,.guarantee,.bento figure,.seal,.logo-stage,.starbox{overflow:hidden;contain:paint}
 section{position:relative}
 .eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-size:.8rem;color:var(--lav);font-weight:500;margin-bottom:1rem}
 .eyebrow::before{content:"";width:28px;height:1px;background:var(--lav)}
@@ -78,28 +81,43 @@ nav.dk .navpill{background:rgba(11,11,12,.62);border-color:rgba(255,255,255,.1);
 #menu a{transition:color .3s}#menu a:hover{color:var(--lav-2)}
 
 /* HERO */
-.hero{min-height:100dvh;display:grid;align-items:end;color:var(--bone);background:var(--ink);overflow:clip;isolation:isolate}
-.hero .media{position:absolute;inset:0;z-index:-2}
-.hero .media img{width:100%;height:100%;object-fit:cover;object-position:center 40%;animation:kb 26s ease-in-out infinite alternate;transform:scale(1.08);filter:saturate(.85) contrast(1.05)}
-@keyframes kb{from{transform:scale(1.08) translate(0,0)}to{transform:scale(1.18) translate(1.5%,-1.2%)}}
-.hero .veil{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(11,11,12,.25) 0%,rgba(11,11,12,.15) 35%,rgba(11,11,12,.88) 78%,var(--ink) 100%)}
-.hero .glow{position:absolute;inset:0;z-index:-1;background:radial-gradient(50vmax 50vmax at 10% 0%,var(--lav-glow),transparent 60%);animation:drift 18s ease-in-out infinite alternate;pointer-events:none;opacity:.9}
-@keyframes drift{to{background-position:8vmax 6vmax;opacity:.6}}
-.hero .wrap{padding:9rem 0 4.5rem;display:grid;grid-template-columns:1.3fr .8fr;gap:3rem;align-items:end}
-.hero h1{font-size:clamp(2.3rem,5.6vw,4.6rem);font-weight:300;line-height:1.3;text-wrap:balance}
+.hero{min-height:100dvh;display:grid;align-items:center;color:var(--bone);background:var(--ink);isolation:isolate}
+.hero .pat{position:absolute;inset:0;z-index:-3;opacity:.13;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'><g fill='none' stroke='%23ffffff' stroke-width='.8' transform='translate(80 80)'><rect x='-36' y='-36' width='72' height='72'/><rect x='-36' y='-36' width='72' height='72' transform='rotate(45)'/><rect x='-36' y='-36' width='72' height='72' transform='translate(-80 -80)'/><rect x='-36' y='-36' width='72' height='72' transform='translate(80 80)'/><rect x='-36' y='-36' width='72' height='72' transform='translate(-80 80)'/><rect x='-36' y='-36' width='72' height='72' transform='translate(80 -80)'/></g></svg>");-webkit-mask:radial-gradient(80% 80% at 50% 50%,#000 30%,transparent 100%);mask:radial-gradient(80% 80% at 50% 50%,#000 30%,transparent 100%)}
+.hero .glow{position:absolute;inset:0;z-index:-2;background:radial-gradient(42vmax 42vmax at 22% 50%,rgba(139,116,196,.32),transparent 65%),radial-gradient(30vmax 30vmax at 85% 15%,rgba(139,116,196,.12),transparent 60%);animation:drift 16s ease-in-out infinite alternate;pointer-events:none}
+@keyframes drift{to{opacity:.65}}
+.hero .veil{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 70%,var(--ink))}
+.hero .wrap{padding:8.5rem 0 5rem;display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(2.3rem,5.4vw,4.4rem);font-weight:300;line-height:1.3;text-wrap:balance}
 .hero h1 strong{font-weight:600;color:#fff}
 .hero h1 em{font-style:normal;color:var(--lav-2);font-weight:500}
-.hero p{margin:1.4rem 0 2rem;max-width:56ch;color:#cfcbc4;font-size:1.12rem}
+.hero p{margin:1.4rem 0 2rem;max-width:54ch;color:#cfcbc4;font-size:1.12rem}
 .hero .ctas{display:flex;gap:.9rem;flex-wrap:wrap}
 .line{overflow:hidden;display:block}
 .line>span{display:block;transform:translateY(115%);animation:rise .9s var(--ease-out) forwards}
 .line:nth-child(2)>span{animation-delay:.12s}.line:nth-child(3)>span{animation-delay:.24s}
 @keyframes rise{to{transform:none}}
-.hero .side{display:grid;gap:1rem;justify-items:start}
-.stat{border-inline-start:1px solid rgba(255,255,255,.22);padding-inline-start:1.1rem}
-.stat b{display:block;font-family:var(--disp);font-size:clamp(2rem,4vw,3rem);font-weight:500;line-height:1.2;color:#fff}
-.stat small{color:#b5b1aa;font-size:.95rem}
-.emblem-float{position:absolute;inset-inline-start:4%;top:14%;width:min(28vw,240px);opacity:.18;z-index:-1;animation:spin 120s linear infinite}
+.stats{display:flex;gap:2.2rem;margin-top:2.6rem;flex-wrap:wrap}
+.stat{border-inline-start:1px solid rgba(255,255,255,.2);padding-inline-start:1rem}
+.stat b{display:block;font-family:var(--disp);font-size:clamp(1.7rem,3vw,2.4rem);font-weight:500;line-height:1.2;color:#fff}
+.stat small{color:#b5b1aa;font-size:.9rem}
+.logo-stage{position:relative;aspect-ratio:1;max-width:560px;margin-inline:auto;display:grid;place-items:center}
+.logo-stage .halo{position:absolute;inset:6%;border-radius:50%;background:radial-gradient(circle,rgba(139,116,196,.28),transparent 62%);filter:blur(18px);animation:breathe 6s ease-in-out infinite alternate}
+@keyframes breathe{to{transform:scale(1.12);opacity:.7}}
+.logo-stage .orbit{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(255,255,255,.08)}
+.logo-stage .orbit.o2{inset:9%;border-style:dashed;border-color:rgba(255,255,255,.1);animation:spin 90s linear infinite}
+.logo-stage .orbit.o3{inset:18%;border-color:rgba(141,116,196,.25)}
+.logo-stage .orbit i{position:absolute;top:-4px;inset-inline-start:50%;width:8px;height:8px;border-radius:50%;background:var(--lav-2);box-shadow:0 0 18px var(--lav-2)}
+.logo-stage .mark{position:relative;width:40%;margin-top:-6%;animation:floaty 7s ease-in-out infinite;filter:drop-shadow(0 0 30px rgba(139,116,196,.35))}
+.logo-stage .mark img{width:100%;height:auto;opacity:0;animation:fadein 1.6s var(--ease-out) .3s forwards}
+@keyframes fadein{to{opacity:1}}
+@keyframes floaty{50%{transform:translateY(-10px)}}
+.logo-stage .draw{position:absolute;inset:auto;top:21%;inset-inline-start:21%;width:58%;height:58%;pointer-events:none}
+.logo-stage .draw .p{fill:none;stroke:#fff;stroke-width:.9;stroke-dasharray:900;stroke-dashoffset:900;animation:draw 3.2s var(--ease) .2s forwards}
+.logo-stage .draw .p.lv{stroke:var(--lav-2);animation-delay:1s}
+@keyframes draw{to{stroke-dashoffset:0}}
+.logo-stage .wm{position:absolute;bottom:4%;inset-inline:0;display:grid;justify-items:center;gap:.4rem}
+.logo-stage .wm img{height:54px;width:auto;opacity:0;animation:fadein 1.2s var(--ease-out) 1.2s forwards}
+.logo-stage .wm small{color:#9c978f;font-size:.78rem;letter-spacing:normal;font-family:var(--disp);opacity:0;animation:fadein 1.2s var(--ease-out) 1.6s forwards}
 @keyframes spin{to{transform:rotate(360deg)}}
 .scrollcue{position:absolute;bottom:1.6rem;inset-inline-start:50%;translate:-50% 0;width:1px;height:54px;background:linear-gradient(var(--lav-2),transparent);animation:cue 2.2s ease-in-out infinite}
 @keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
@@ -264,13 +282,44 @@ footer .bot{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;f
 .wa-fab::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid rgba(37,211,102,.5);animation:pulse 2.4s ease-out infinite}
 @keyframes pulse{to{transform:scale(1.3);opacity:0}}
 
+
+/* PROCESS */
+.process{padding:7rem 0;background:var(--paper)}
+.steps{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:3rem;counter-reset:s}
+.steps li{position:relative;padding:1.8rem 1.5rem 1.6rem;border-radius:1.4rem;background:#fff;border:1px solid rgba(0,0,0,.06);transition:transform .6s var(--ease),box-shadow .6s var(--ease)}
+.steps li:hover{transform:translateY(-6px);box-shadow:0 30px 60px -30px rgba(30,20,60,.25)}
+.steps li::after{content:"";position:absolute;top:2.6rem;inset-inline-end:-1rem;width:1rem;height:1px;background:var(--lav);opacity:.5}
+.steps li:last-child::after{display:none}
+.steps .k{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--ink);color:#fff;font-size:.85rem;margin-bottom:1rem}
+.steps h3{font-size:1.12rem;margin-bottom:.4rem}.steps p{color:var(--graphite);font-size:.95rem}
+/* FAQ */
+.faq{padding:7rem 0 2rem;background:var(--paper)}
+.faq .head{max-width:60ch;margin-bottom:2.2rem}
+.qs{display:grid;gap:.7rem;max-width:860px}
+.qs details{background:#fff;border:1px solid rgba(0,0,0,.07);border-radius:1.1rem;padding:0 1.4rem;transition:box-shadow .5s var(--ease)}
+.qs details[open]{box-shadow:0 20px 40px -30px rgba(30,20,60,.3);border-color:rgba(111,85,163,.3)}
+.qs summary{cursor:pointer;list-style:none;padding:1.1rem 0;font-weight:500;font-size:1.05rem;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.qs summary::-webkit-details-marker{display:none}
+.qs summary::after{content:"+";flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--lav-soft);color:var(--lav);font-family:var(--disp);transition:transform .5s var(--ease)}
+.qs details[open] summary::after{transform:rotate(45deg)}
+.qs p{padding:0 0 1.2rem;color:var(--graphite)}
+.qs details::details-content{opacity:0;transition:opacity .5s var(--ease),content-visibility .5s allow-discrete}
+.qs details[open]::details-content{opacity:1}
+/* nav active + lightbox nav */
+.navpill ul a.act{opacity:1}.navpill ul a.act::after{transform:scaleX(1)}
+dialog.lb .nv{position:absolute;top:50%;translate:0 -50%;width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:var(--ink);cursor:pointer;font-size:1.1rem;display:grid;place-items:center}
+dialog.lb .nv.prev{inset-inline-end:-.2rem}dialog.lb .nv.next{inset-inline-start:-.2rem}
+dialog.lb figcaption{position:absolute;bottom:.8rem;inset-inline:0;text-align:center;color:#fff;font-size:.9rem;text-shadow:0 2px 10px rgba(0,0,0,.6)}
+@media (max-width:1000px){.steps{grid-template-columns:1fr 1fr}.steps li::after{display:none}.hero .wrap{grid-template-columns:1fr}.logo-stage{max-width:400px}}
+@media (max-width:760px){.steps{grid-template-columns:1fr}.process,.faq{padding:5rem 0}.logo-stage{max-width:230px;margin-top:0;order:-1}.hero .wrap{gap:1.2rem}.hero h1{font-size:1.95rem}.logo-stage .wm img{height:44px}.stats{gap:1.2rem}}
+
 /* REVEAL */
 .rv{opacity:0;transform:translateY(36px);transition:opacity 1s var(--ease-out),transform 1s var(--ease-out)}
 .rv.in{opacity:1;transform:none}
 .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}.d5{transition-delay:.5s}.d6{transition-delay:.6s}
 
 @media (max-width:1000px){
-  .hero .wrap{grid-template-columns:1fr}.hero .side{grid-auto-flow:column;justify-content:start;gap:2rem}
+  
   .story .wrap,.training .wrap,.guarantee .wrap,.contact .wrap{grid-template-columns:1fr}
   .sgrid{grid-template-columns:1fr 1fr}
   .bento{grid-template-columns:1fr 1fr;grid-auto-rows:200px}
@@ -282,7 +331,7 @@ footer .bot{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;f
   body{font-size:16px}
   .navpill ul,.navpill .cta{display:none}.burger{display:block}
   .navpill{gap:.6rem;padding:.45rem .5rem .45rem 1rem}
-  .hero .wrap{padding:7.5rem 0 4rem}.hero .side{grid-auto-flow:row;gap:.9rem}
+  .hero .wrap{padding:7rem 0 4rem}
   .hero h1{font-size:2.1rem}
   .sgrid{grid-template-columns:1fr}.svc.big{grid-template-columns:1fr}
   .services .head{grid-template-columns:1fr}
@@ -299,7 +348,8 @@ footer .bot{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;f
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
   .rv,.line>span{opacity:1!important;transform:none!important}
-  .starbox .p{stroke-dashoffset:0!important}
+  .starbox .p,.logo-stage .draw .p{stroke-dashoffset:0!important}
+  .logo-stage img,.logo-stage .wm small{opacity:1!important}
   .bento figure{clip-path:none!important}
 }
 </style>
@@ -313,6 +363,7 @@ footer .bot{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;f
     <ul>
       <li><a href="#story">قصتنا</a></li>
       <li><a href="#services">خدماتنا</a></li>
+      <li><a href="#process">رحلة المشروع</a></li>
       <li><a href="#gallery">المعرض</a></li>
       <li><a href="#training">التدريب</a></li>
       <li><a href="#guarantee">الضمان</a></li>
@@ -336,9 +387,7 @@ footer .bot{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;f
 
 <!-- HERO -->
 <header class="hero" id="top">
-  <div class="media"><img src="assets/storefront.jpg" alt="واجهة مركز تفاصيل الديكور في تبوك ليلاً" fetchpriority="high"></div>
-  <div class="veil"></div><div class="glow"></div>
-  <img class="emblem-float" src="assets/emblem-white.png" alt="" aria-hidden="true">
+  <div class="pat"></div><div class="glow"></div><div class="veil"></div>
   <div class="wrap">
     <div>
       <div class="eyebrow" style="color:var(--lav-2)">مركز الديكور الداخلي والفنون · تبوك</div>
@@ -352,11 +401,18 @@ footer .bot{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;f
         <a class="btn light mag" href="https://wa.me/966590599060?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D8%AF%D9%8A%D9%83%D9%88%D8%B1" target="_blank" rel="noopener">استشارة عبر واتساب <span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></span></a>
         <a class="btn ghost mag" href="#gallery">استعرض المعرض</a>
       </div>
+      <div class="stats">
+        <div class="stat rv d2"><b class="num" data-count="12000">0</b><small>عميل تشرفنا بخدمتهم</small></div>
+        <div class="stat rv d3"><b class="num" data-count="9">0</b><small>خدمات متكاملة</small></div>
+        <div class="stat rv d4"><b class="num">100%</b><small>ضمان المنتج والتركيب</small></div>
+      </div>
     </div>
-    <div class="side">
-      <div class="stat rv d2"><b class="num" data-count="12000">0</b><small>عميل تشرفنا بخدمتهم</small></div>
-      <div class="stat rv d3"><b class="num" data-count="9">0</b><small>خدمات متكاملة تحت سقف واحد</small></div>
-      <div class="stat rv d4"><b class="num">100%</b><small>ضمان على المنتج ودقة التركيب</small></div>
+    <div class="logo-stage" aria-label="شعار تفاصيل الديكور">
+      <div class="halo"></div>
+      <div class="orbit"></div><div class="orbit o2"><i></i></div><div class="orbit o3"></div>
+      <svg class="draw" viewBox="0 0 200 200" aria-hidden="true"><g transform="translate(100 100)"><rect class="p" x="-68" y="-68" width="136" height="136" transform="rotate(45)"/><rect class="p lv" x="-52" y="-52" width="104" height="104"/></g></svg>
+      <div class="mark"><img src="assets/emblem-white.png" alt="" width="600" height="600" fetchpriority="high"></div>
+      <div class="wm"><img src="assets/wordmark-white.png" alt="Details decoration تفاصيل الديكور"><small class="en">Interior · Art · Training</small></div>
     </div>
   </div>
   <div class="scrollcue" aria-hidden="true"></div>
@@ -427,6 +483,20 @@ footer .bot{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;f
   </div>
 </section>
 
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="eyebrow rv">رحلة مشروعك</div>
+    <h2 class="h2 rv d1">أربع خطوات من الفكرة إلى مكان يشبهك</h2>
+    <ol class="steps">
+      <li class="rv"><span class="k en">01</span><h3>استشارة وزيارة</h3><p>نستمع لاحتياجك ونقيس المساحة ونحدد الطراز والميزانية.</p></li>
+      <li class="rv d1"><span class="k en">02</span><h3>تصميم ثلاثي الأبعاد</h3><p>ترى مشروعك كاملاً على الشاشة في قاعة العرض، وتعدّل قبل البدء.</p></li>
+      <li class="rv d2"><span class="k en">03</span><h3>تنفيذ وإشراف</h3><p>فرق متخصصة وخامات من أجود الأنواع، بإشراف هندسي متواصل.</p></li>
+      <li class="rv d3"><span class="k en">04</span><h3>تنسيق وتسليم</h3><p>ننسّق المكان مجاناً ونسلّمه جاهزاً مع ضمان الجودة ودقة التركيب.</p></li>
+    </ol>
+  </div>
+</section>
+
 <!-- GALLERY -->
 <section class="gallery dark" id="gallery">
   <div class="wrap">
@@ -438,13 +508,14 @@ footer .bot{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;f
       <figure><img src="assets/showroom-3.jpg" alt="الممر الداخلي والأعمدة" loading="lazy"><figcaption>الممر الداخلي</figcaption></figure>
       <figure class="c"><img src="assets/facade-night.jpg" alt="لوحة الواجهة المضيئة" loading="lazy"><figcaption>الواجهة المضيئة</figcaption></figure>
       <figure><img src="assets/showroom-4.jpg" alt="جلسات الانتظار" loading="lazy"><figcaption>جلسات الانتظار</figcaption></figure>
-      <figure class="b"><img src="assets/showroom-1.jpg" alt="مدخل المركز" loading="lazy"><figcaption>مدخل المركز</figcaption></figure>
+      <figure class="b"><img src="assets/storefront.jpg" alt="واجهة المركز ليلاً" loading="lazy"><figcaption>واجهة المركز ليلاً</figcaption></figure>
+      <figure><img src="assets/showroom-1.jpg" alt="مدخل المركز" loading="lazy"><figcaption>مدخل المركز</figcaption></figure>
       <figure><img src="assets/showroom-5.jpg" alt="ركن الجلسات بالتقسيمات الهندسية" loading="lazy"><figcaption>ركن الجلسات</figcaption></figure>
       <figure><img src="assets/showroom-6.jpg" alt="ركن عرض التصاميم" loading="lazy"><figcaption>ركن عرض التصاميم</figcaption></figure>
     </div>
   </div>
 </section>
-<dialog class="lb" id="lb"><button id="lbx" aria-label="إغلاق">✕</button><img id="lbimg" src="" alt=""></dialog>
+<dialog class="lb" id="lb"><figure style="margin:0;position:relative"><button id="lbx" aria-label="إغلاق">✕</button><button class="nv prev" id="lbp" aria-label="السابق">›</button><button class="nv next" id="lbn" aria-label="التالي">‹</button><img id="lbimg" src="" alt=""><figcaption id="lbc"></figcaption></figure></dialog>
 
 <!-- TRAINING -->
 <section class="training" id="training">
@@ -512,6 +583,23 @@ footer .bot{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;f
     <div class="clients-h rv"><h3>علامات تجارية وثقت بنا</h3></div>
     <div class="logo-rows rv" id="logos"></div>
     <p class="count rv">أكثر من <span class="num">36</span> علامة تجارية ومؤسسة في تبوك والمملكة</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow rv">أسئلة شائعة</div>
+      <h2 class="h2 rv d1">كل ما تريد معرفته قبل البدء</h2>
+    </div>
+    <div class="qs">
+      <details class="rv" open><summary>هل أرى التصميم قبل التنفيذ؟</summary><p>نعم. نصمم مشروعك ببرامج ثلاثية الأبعاد ونعرضه عليك في قاعة العرض، وتستطيع تعديل أي تفصيلة قبل بدء التنفيذ.</p></details>
+      <details class="rv d1"><summary>ما الذي يشمله الضمان؟</summary><p>الضمان يغطي جودة المنتج ودقة التركيب، ونتعهد باستخدام أفضل وأجود أنواع الخامات في التركيب.</p></details>
+      <details class="rv d2"><summary>هل تنفّذون خارج تبوك؟</summary><p>مقرنا في تبوك ونخدم المنطقة بالكامل، وننفذ مشاريع مختارة في مناطق أخرى حسب حجم المشروع. تواصل معنا لتفاصيل الجدولة.</p></details>
+      <details class="rv d3"><summary>هل يوجد تدريب على التصميم الداخلي؟</summary><p>نعم، يقدم قسم التدريب برامج عملية على التصميم والديكور الداخلي، وكان آخرها تدريب الدفعة الأولى من خريجات قسم التصميم بجامعة تبوك.</p></details>
+      <details class="rv d4"><summary>هل تنسيق المكان بعد التنفيذ مدفوع؟</summary><p>لا. تنسيق المكان بعد التنفيذ خدمة مجانية لعملائنا.</p></details>
+    </div>
   </div>
 </section>
 
@@ -601,9 +689,18 @@ try{
   var wrap=document.getElementById('logos');
   rows.forEach(function(r,ri){var div=document.createElement('div');div.className='lrow'+(ri?' r':'');var html='';r.forEach(function(i){html+='<figure'+(darkIdx.indexOf(i)>-1?' class="d"':'')+'><img src="assets/client-'+i+'.jpg" alt="'+names[i-1]+'" loading="lazy" title="'+names[i-1]+'"></figure>';});div.innerHTML=html+html;wrap.appendChild(div);});
   // lightbox
-  var lb=document.getElementById('lb'),lbi=document.getElementById('lbimg');
-  document.querySelectorAll('.bento figure').forEach(function(f){f.addEventListener('click',function(){var im=f.querySelector('img');lbi.src=im.src;lbi.alt=im.alt;lb.showModal();});});
+  var lb=document.getElementById('lb'),lbi=document.getElementById('lbimg'),lbc=document.getElementById('lbc');
+  var figs=[].slice.call(document.querySelectorAll('.bento figure')),cur=0;
+  function show(i){cur=(i+figs.length)%figs.length;var im=figs[cur].querySelector('img');lbi.src=im.src;lbi.alt=im.alt;lbc.textContent=im.alt;}
+  figs.forEach(function(f,i){f.addEventListener('click',function(){show(i);lb.showModal();});});
   document.getElementById('lbx').addEventListener('click',function(){lb.close();});
+  document.getElementById('lbp').addEventListener('click',function(e){e.stopPropagation();show(cur-1);});
+  document.getElementById('lbn').addEventListener('click',function(e){e.stopPropagation();show(cur+1);});
+  lb.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')show(cur+1);if(e.key==='ArrowRight')show(cur-1);});
+  // active nav
+  var links=document.querySelectorAll('.navpill ul a');
+  var sio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('act',a.getAttribute('href')==='#'+e.target.id);});}});},{rootMargin:'-40% 0px -55% 0px'});
+  document.querySelectorAll('section[id],header[id]').forEach(function(sec){sio.observe(sec);});
   lb.addEventListener('click',function(e){if(e.target===lb)lb.close();});
   // petals in starbox
   var sb=document.getElementById('starbox');for(var i=0;i<9;i++){var p=document.createElement('i');p.className='petal';p.style.left=(8+Math.random()*84)+'%';p.style.top='0';p.style.animationDelay=(Math.random()*9)+'s';p.style.animationDuration=(8+Math.random()*5)+'s';sb.appendChild(p);}
