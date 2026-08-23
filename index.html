@@ -39,7 +39,8 @@ h1,h2,h3{font-family:var(--disp);line-height:1.4;font-weight:500}
 .num{font-family:var(--disp);font-feature-settings:"locl" 0;direction:ltr;unicode-bidi:isolate;font-variant-numeric:tabular-nums}
 .wrap{width:var(--w);margin-inline:auto}
 .hero,.marq,.logo-rows,.story,.guarantee,.bento figure,.seal,.logo-stage,.starbox{overflow:hidden;contain:paint}
-section{position:relative}
+section{position:relative;scroll-margin-top:96px}
+@media (max-width:760px){section{scroll-margin-top:118px}}
 .eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-size:.8rem;color:var(--lav);font-weight:500;margin-bottom:1rem}
 .eyebrow::before{content:"";width:28px;height:1px;background:var(--lav)}
 .dark .eyebrow{color:var(--lav-2)}
@@ -59,6 +60,8 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;opa
 nav{position:fixed;top:18px;inset-inline:0;z-index:90;display:flex;justify-content:center;pointer-events:none}
 .navpill{pointer-events:auto;display:flex;align-items:center;gap:1.6rem;padding:.55rem .7rem .55rem 1.3rem;border-radius:999px;background:rgba(252,251,249,.72);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);border:1px solid rgba(0,0,0,.06);box-shadow:0 10px 40px -18px rgba(0,0,0,.25);transition:background .5s var(--ease),box-shadow .5s var(--ease)}
 nav.dk .navpill{background:rgba(11,11,12,.62);border-color:rgba(255,255,255,.1);color:var(--bone)}
+.navpill .row{display:contents}
+.navpill .cta{order:9}
 .navpill .logo img{height:30px;width:auto}
 .navpill ul{display:flex;gap:1.3rem;list-style:none;font-size:.9rem;font-weight:500}
 .navpill ul a{position:relative;padding:.2rem 0;opacity:.8;transition:opacity .3s}
@@ -329,9 +332,19 @@ dialog.lb figcaption{position:absolute;bottom:.8rem;inset-inline:0;text-align:ce
 }
 @media (max-width:760px){
   body{font-size:16px}
-  .navpill ul,.navpill .cta{display:none}.burger{display:block}
-  .navpill{gap:.6rem;padding:.45rem .5rem .45rem 1rem}
-  .hero .wrap{padding:7rem 0 4rem}
+  nav{top:10px;padding-inline:10px}
+  .navpill{flex-direction:column;align-items:stretch;gap:.35rem;padding:.5rem .6rem .45rem;border-radius:1.3rem;width:100%}
+  .navpill .row{display:flex;align-items:center;justify-content:space-between}
+  .navpill .logo img{height:26px}
+  .navpill .cta{padding:.45rem .45rem .45rem .9rem;font-size:.82rem}.navpill .cta .ic{width:26px;height:26px}
+  .navpill ul{display:flex;gap:.2rem;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:.15rem .1rem;margin:0;scroll-snap-type:x proximity}
+  .navpill ul::-webkit-scrollbar{display:none}
+  .navpill ul a{white-space:nowrap;font-size:.8rem;padding:.35rem .7rem;border-radius:999px;background:rgba(0,0,0,.05);opacity:.9;scroll-snap-align:start}
+  nav.dk .navpill ul a{background:rgba(255,255,255,.08)}
+  .navpill ul a::after{display:none}
+  .navpill ul a.act{background:var(--lav);color:#fff;opacity:1}
+  .burger{display:none}
+  .hero .wrap{padding:7.5rem 0 4rem}
   .hero h1{font-size:2.1rem}
   .sgrid{grid-template-columns:1fr}.svc.big{grid-template-columns:1fr}
   .services .head{grid-template-columns:1fr}
@@ -359,7 +372,11 @@ dialog.lb figcaption{position:absolute;bottom:.8rem;inset-inline:0;text-align:ce
 
 <nav id="nav">
   <div class="navpill">
-    <a class="logo" href="#top" aria-label="تفاصيل الديكور"><img id="navlogo" src="assets/wordmark-dark.png" alt="تفاصيل الديكور"></a>
+    <div class="row">
+      <a class="logo" href="#top" aria-label="تفاصيل الديكور"><img id="navlogo" src="assets/wordmark-dark.png" alt="تفاصيل الديكور"></a>
+      <a class="btn lav cta" href="#contact">تواصل معنا <span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></span></a>
+      <button class="burger" id="burger" aria-label="القائمة" aria-expanded="false"><span></span><span></span></button>
+    </div>
     <ul>
       <li><a href="#story">قصتنا</a></li>
       <li><a href="#services">خدماتنا</a></li>
@@ -368,9 +385,8 @@ dialog.lb figcaption{position:absolute;bottom:.8rem;inset-inline:0;text-align:ce
       <li><a href="#training">التدريب</a></li>
       <li><a href="#guarantee">الضمان</a></li>
       <li><a href="#partners">شركاء النجاح</a></li>
+      <li><a href="#faq">الأسئلة</a></li>
     </ul>
-    <a class="btn lav cta" href="#contact">تواصل معنا <span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></span></a>
-    <button class="burger" id="burger" aria-label="القائمة" aria-expanded="false"><span></span><span></span></button>
   </div>
 </nav>
 <div id="menu" aria-hidden="true">
@@ -699,7 +715,7 @@ try{
   lb.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')show(cur+1);if(e.key==='ArrowRight')show(cur-1);});
   // active nav
   var links=document.querySelectorAll('.navpill ul a');
-  var sio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('act',a.getAttribute('href')==='#'+e.target.id);});}});},{rootMargin:'-40% 0px -55% 0px'});
+  var sio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){var on=a.getAttribute('href')==='#'+e.target.id;a.classList.toggle('act',on);if(on&&innerWidth<761)a.scrollIntoView({block:'nearest',inline:'center',behavior:'smooth'});});}});},{rootMargin:'-40% 0px -55% 0px'});
   document.querySelectorAll('section[id],header[id]').forEach(function(sec){sio.observe(sec);});
   lb.addEventListener('click',function(e){if(e.target===lb)lb.close();});
   // petals in starbox
