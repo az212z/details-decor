@@ -161,13 +161,14 @@ h1,h2,h3,p{font-weight:500;line-height:1.75}
 /* ===== site framing ===== */
 #prog{position:fixed;top:0;inset-inline:0;height:2px;background:var(--lav2);transform-origin:right;transform:scaleX(0);z-index:100}
 nav{position:fixed;top:0;inset-inline:0;z-index:90;color:#f2efe9;transition:background .4s,box-shadow .4s}
-nav .in{width:min(96vw,1000px);margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0}
+nav .in{width:min(96vw,1000px);margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem 0}
+nav a{min-height:40px;display:inline-flex;align-items:center}
 nav.on{background:rgba(13,13,15,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(255,255,255,.08)}
 nav img{height:26px;width:auto}
 nav ul{display:flex;gap:1.15rem;list-style:none;font-size:.82rem}
 nav ul a{opacity:.8;padding:.2rem 0;border-bottom:2px solid transparent;transition:all .3s;color:#f2efe9;text-decoration:none}
 nav ul a:hover,nav ul a.act{opacity:1;border-color:var(--lav2)}
-.wa-chip{display:inline-flex;align-items:center;gap:.45rem;background:#25d366;color:#fff;padding:.45rem 1rem;border-radius:999px;font-size:.82rem;font-weight:600;text-decoration:none;transition:transform .3s}
+.wa-chip{display:inline-flex;align-items:center;gap:.45rem;background:#25d366;color:#fff;padding:.62rem 1.25rem;border-radius:999px;font-size:.85rem;min-height:40px;font-weight:600;text-decoration:none;transition:transform .3s}
 .wa-chip:hover{transform:translateY(-2px)}
 .wa-chip svg{width:16px;height:16px;fill:#fff}
 /* cover */
@@ -524,11 +525,14 @@ dialog.lb button{position:absolute;top:-.4rem;right:-.4rem;width:42px;height:42p
       <a class="lnk" href="https://www.instagram.com/decorationdetails.s/" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><div><small>إنستغرام</small><b class="en">@decorationdetails.s</b></div></a>
       <a class="lnk" href="https://decorationdetails.com" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24"><path d="M6 7h12l1 13H5L6 7z"/><path d="M9 10V6a3 3 0 016 0v4"/></svg></span><div><small>متجر اللوحات · سلة</small><b class="en">decorationdetails.com</b></div></a>
       <a class="lnk" href="https://www.instagram.com/detailsart.sa/" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l2.2 4.5 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5L4.8 8.2l5-.7L12 3z"/></svg></span><div><small>قسم الفنون</small><b class="en">@detailsart.sa</b></div></a>
-      <a class="lnk" href="https://maps.app.goo.gl/dXkHPLgz7EMA9LL28" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><small>الموقع على الخريطة</small><b>شارع خالد بن الوليد، المصيف، تبوك</b></div></a>
+      <a class="lnk" href="https://maps.app.goo.gl/dXkHPLgz7EMA9LL28" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><small>الموقع على الخريطة</small><b>شارع خالد بن الوليد، حي المصيف، تبوك <span class="en">47321</span></b></div></a>
       <a class="lnk" href="tel:+966590599060"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></span><div><small>اتصال</small><b><span class="en">059 059 9060</span> · <span class="en">014 429 0020</span></b></div></a>
       <a class="lnk" href="https://www.tiktok.com/@decoration_details" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24"><path d="M14 4v9.5a3.5 3.5 0 11-3.5-3.5"/><path d="M14 4c.5 2.5 2.2 4 4.5 4.3"/></svg></span><div><small>تيك توك</small><b class="en">@decoration_details</b></div></a>
+      <a class="lnk" href="https://wa.me/966558113005" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 00-7.7 13.6L3 21l4.5-1.2A9 9 0 1012 3z"/><path d="M9 9.5c.3 2.5 2.6 4.8 5.2 5.2l1.3-1.3-2-1-.9.9c-1-.4-1.8-1.2-2.2-2.2l.9-.9-1-2L9 9.5z"/></svg></span><div><small>واتساب المبيعات</small><b class="en">055 811 3005</b></div></a>
+      <a class="lnk" href="https://www.snapchat.com/add/decor.details" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c3 0 4.5 2.2 4.5 5v2.3c.8.3 1.7.1 2.3-.2-.2.9-1.2 1.4-2 1.7.7 1.6 2.2 2.6 3.7 2.9-.5.9-1.8 1-2.6 1.2-.2.6-.3 1.2-.7 1.3-1 .2-2-.2-3 .6-.7.6-1.4.9-2.2.9s-1.5-.3-2.2-.9c-1-.8-2-.4-3-.6-.4-.1-.5-.7-.7-1.3-.8-.2-2.1-.3-2.6-1.2 1.5-.3 3-1.3 3.7-2.9-.8-.3-1.8-.8-2-1.7.6.3 1.5.5 2.3.2V8c0-2.8 1.5-5 4.5-5z"/></svg></span><div><small>سناب شات</small><b class="en">@decor.details</b></div></a>
+      <a class="lnk" href="https://linktr.ee/Details.decoration" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24"><path d="M9 15l-3 3a3.5 3.5 0 01-5-5l.5-.5"/><path d="M15 9l3-3a3.5 3.5 0 015 5l-.5.5" transform="translate(-1.5 1.5)"/><path d="M8.5 15.5l7-7"/></svg></span><div><small>كل الروابط</small><b class="en">linktr.ee/Details.decoration</b></div></a>
     </div>
-    <div class="meta"><span>يومياً من <span class="en">5:00</span> مساءً إلى <span class="en">10:30</span> مساءً</span><span>سناب شات <span class="en">@decor.details</span></span></div>
+    <div class="meta"><span>أوقات العمل: يومياً من <span class="en">5:00</span> مساءً إلى <span class="en">10:30</span> مساءً</span></div>
     <div class="end"><span>© <span class="en">2026</span> تفاصيل الديكور. جميع الحقوق محفوظة.</span><span class="en">Details decoration · Tabuk</span></div>
   </div>
 </footer>
