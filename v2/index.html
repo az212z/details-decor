@@ -153,12 +153,100 @@ h1,h2,h3,p{font-weight:500;line-height:1.75}
 .p-brands .j2{right:28.5cqw;bottom:24cqw}
 .p-brands .j3{left:28.5cqw;top:24cqw}
 .p-brands .j4{left:28.5cqw;bottom:24cqw}
+
+/* ===== site framing ===== */
+#prog{position:fixed;top:0;inset-inline:0;height:2px;background:var(--lav2);transform-origin:right;transform:scaleX(0);z-index:100}
+nav{position:fixed;top:0;inset-inline:0;z-index:90;color:#f2efe9;transition:background .4s,box-shadow .4s}
+nav .in{width:min(96vw,1000px);margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0}
+nav.on{background:rgba(13,13,15,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(255,255,255,.08)}
+nav img{height:26px;width:auto}
+nav ul{display:flex;gap:1.15rem;list-style:none;font-size:.82rem}
+nav ul a{opacity:.8;padding:.2rem 0;border-bottom:2px solid transparent;transition:all .3s;color:#f2efe9;text-decoration:none}
+nav ul a:hover,nav ul a.act{opacity:1;border-color:var(--lav2)}
+.wa-chip{display:inline-flex;align-items:center;gap:.45rem;background:#25d366;color:#fff;padding:.45rem 1rem;border-radius:999px;font-size:.82rem;font-weight:600;text-decoration:none;transition:transform .3s}
+.wa-chip:hover{transform:translateY(-2px)}
+.wa-chip svg{width:16px;height:16px;fill:#fff}
+/* cover */
+#cover{position:relative;min-height:72svh;display:grid;place-content:center;text-align:center;gap:1rem;color:#f2efe9;padding:6.5rem 4vw 3.5rem;overflow:hidden;contain:paint;background:#0d0d0f url("../assets/gold-pattern.jpg");background-size:min(40vw,380px)}
+#cover::before{content:"";position:absolute;inset:0;background:radial-gradient(70% 60% at 50% 45%,rgba(13,13,15,.25),rgba(13,13,15,.92))}
+#cover>*{position:relative}
+#cover .box{width:min(150px,32vw);aspect-ratio:1;margin-inline:auto;border:1px solid rgba(255,255,255,.5);padding:10px;display:grid;place-items:center;position:relative}
+#cover .box::before{content:"";position:absolute;inset:5px;border:1px solid rgba(255,255,255,.2)}
+#cover .box img{width:72%;filter:drop-shadow(0 0 18px rgba(141,116,196,.45))}
+#cover .wmc{height:44px;width:auto;margin-inline:auto}
+#cover h1{font-size:clamp(1.15rem,2.6vw,1.6rem);font-weight:400;color:#dcd8d1}
+#cover small{color:#9a958d;font-size:.85rem}
+#cover .btns{display:flex;gap:.7rem;justify-content:center;flex-wrap:wrap;margin-top:.4rem}
+.cbtn{display:inline-block;padding:.65rem 1.5rem;font-size:.9rem;text-decoration:none;color:#0d0d0f;background:#f2efe9;transition:all .35s}
+.cbtn:hover{background:var(--lav2);color:#fff}
+.cbtn.lv{background:var(--lav);color:#fff}
+.cbtn.lv:hover{background:var(--lav2)}
+.cue{position:absolute;bottom:1.2rem;left:50%;translate:-50% 0;width:1px;height:44px;background:linear-gradient(var(--lav2),transparent);animation:cue 2.2s ease-in-out infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+/* chapter labels + page polish */
+.chap{width:min(96vw,1000px);margin:4.2vmin auto 0;display:flex;align-items:center;gap:.9rem;color:#b9b4ac;font-size:.92rem}
+.chap b{color:var(--lav2);font-weight:600}
+.chap::after{content:"";flex:1;height:1px;background:rgba(255,255,255,.14)}
+.pg{transition:transform .6s cubic-bezier(.32,.72,0,1),box-shadow .6s,opacity .8s ease-out;scroll-margin-top:76px}
+.pg:hover{transform:translateY(-6px);box-shadow:0 46px 100px -34px rgba(0,0,0,.85)}
+.pg .no{position:absolute;z-index:5;bottom:2cqw;inset-inline-end:2cqw;background:rgba(13,13,15,.8);color:#fff;font-size:1.5cqw;padding:.4cqw 1.4cqw;letter-spacing:0}
+.pg.fade{opacity:0}
+.pg.fade.in{opacity:1}
+/* footer */
+footer{margin-top:5vmin;background:#0a0a0b;color:#f2efe9;border-top:1px solid rgba(255,255,255,.1)}
+footer .fin{width:min(96vw,1000px);margin-inline:auto;padding:3.4rem 0 2rem}
+footer .lgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;margin-bottom:2rem}
+.lnk{display:flex;align-items:center;gap:.9rem;padding:.95rem 1.05rem;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.03);text-decoration:none;color:inherit;transition:all .35s}
+.lnk:hover{border-color:var(--lav2);background:rgba(141,116,196,.13);translate:0 -3px}
+.lnk .ic{flex:none;width:38px;height:38px;background:#f2efe9;color:#0d0d0f;display:grid;place-items:center}
+.lnk .ic svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.lnk small{display:block;color:#9a958d;font-size:.72rem;line-height:1.5}
+.lnk b{font-weight:500;font-size:.88rem}
+footer .meta{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;color:#b5b1aa;font-size:.85rem}
+footer .end{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-top:1.8rem;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.12);color:#9a958d;font-size:.8rem}
+.wa-fab{position:fixed;bottom:1.4rem;inset-inline-end:1.4rem;z-index:95;display:grid;place-items:center;width:54px;height:54px;background:#25d366;color:#fff;border-radius:50%;box-shadow:0 14px 36px -10px rgba(37,211,102,.55);transition:transform .35s}
+.wa-fab:hover{transform:translateY(-3px)}
+.wa-fab svg{width:26px;height:26px;fill:#fff}
+.en{direction:ltr;unicode-bidi:isolate}
+@media (max-width:900px){nav ul{display:none}footer .lgrid{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){footer .lgrid{grid-template-columns:1fr}#cover{min-height:64svh}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.pg.fade{opacity:1}}
 </style>
 </head>
 <body>
+<div id="prog"></div>
+<nav id="nav">
+  <div class="in">
+    <a href="#cover"><img src="../assets/wordmark-white.png" alt="تفاصيل الديكور"></a>
+    <ul>
+      <li><a href="#p1">القصة</a></li>
+      <li><a href="#p2">الضمان</a></li>
+      <li><a href="#p3">خدماتنا</a></li>
+      <li><a href="#p4">التدريب</a></li>
+      <li><a href="#p5">الصالة</a></li>
+      <li><a href="#p6">الواجهة</a></li>
+      <li><a href="#p7">الشركاء</a></li>
+      <li><a href="#contact">تواصل</a></li>
+    </ul>
+    <a class="wa-chip" href="https://wa.me/966558113005" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 00-7.7 13.6L3 21l4.5-1.2A9 9 0 1012 3z"/></svg>واتساب</a>
+  </div>
+</nav>
+
+<header id="cover">
+  <div class="box"><img src="../assets/emblem-white.png" alt="شعار تفاصيل الديكور"></div>
+  <img class="wmc" src="../assets/wordmark-white.png" alt="Details decoration تفاصيل الديكور">
+  <h1>حينما تلتقي عراقة التصميم وهوية التاريخ وسط بيت الطين</h1>
+  <small>الملف التعريفي · مركز الديكور الداخلي والفنون · تبوك</small>
+  <div class="btns">
+    <a class="cbtn lv" href="https://wa.me/966558113005?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D8%AF%D9%8A%D9%83%D9%88%D8%B1" target="_blank" rel="noopener">استشارة عبر واتساب</a>
+    <a class="cbtn" href="#p1">تصفّح الملف</a>
+  </div>
+  <div class="cue" aria-hidden="true"></div>
+</header>
 
 <!-- ١ قصة تفاصيل -->
-<section class="pg p-story linepat" aria-label="تبدأ تفاصيل القصة">
+<div class="chap"><b>٠١</b><span>تبدأ تفاصيل القصة</span></div>
+<section id="p1" class="pg fade p-story linepat" aria-label="تبدأ تفاصيل القصة">
   <img class="abs flow2" src="../assets/flowers-2.jpg" alt="">
   <img class="abs flow1" src="../assets/flowers.jpg" alt="">
   <div class="xr xr1"></div><div class="xr xr2"></div>
@@ -175,10 +263,12 @@ h1,h2,h3,p{font-weight:500;line-height:1.75}
   </div>
   <h3 class="abs t5">اللون الذي</h3>
   <p class="abs t6">يحمل <b>قاعدة التوازن اللوني</b> بين السماء والأرض</p>
+  <div class="no en" aria-hidden="true">٠١ / ٠٨</div>
 </section>
 
 <!-- ٢ الضمان -->
-<section class="pg p-daman linepat" aria-label="الضمان">
+<div class="chap"><b>٠٢</b><span>الضمان</span></div>
+<section id="p2" class="pg fade p-daman linepat" aria-label="الضمان">
   <div class="xg xg1 abs"></div><div class="xg xg2 abs"></div>
   <img class="wmk wmk1" src="../assets/wordmark-dark.png" alt="">
   <img class="wmk wmk2" src="../assets/wordmark-dark.png" alt="">
@@ -190,10 +280,12 @@ h1,h2,h3,p{font-weight:500;line-height:1.75}
   <h2 class="abs big">الضمان</h2>
   <h3 class="abs sub">على جودة المنتج ودقة التركيب</h3>
   <p class="abs sub2">كما نتعهد أمام العميل بأننا نستخدم أفضل وأجود أنواع الخامات المستخدمة في التركيب</p>
+  <div class="no en" aria-hidden="true">٠٢ / ٠٨</div>
 </section>
 
 <!-- ٣ خدماتنا -->
-<section class="pg p-serv linepat" aria-label="خدماتنا">
+<div class="chap"><b>٠٣</b><span>خدماتنا</span></div>
+<section id="p3" class="pg fade p-serv linepat" aria-label="خدماتنا">
   <img class="wmk wmk1" src="../assets/wordmark-dark.png" alt="">
   <img class="wmk wmk2" src="../assets/wordmark-dark.png" alt="">
   <h2 class="abs t1">خدماتنا ..</h2>
@@ -212,10 +304,12 @@ h1,h2,h3,p{font-weight:500;line-height:1.75}
   <img class="abs wm" src="../assets/wordmark-dark.png" alt="Details decoration تفاصيل الديكور">
   <h3 class="abs t2">التدريب على التصميم والديكور الداخلي</h3>
   <p class="abs t3">وكان آخرها تدريب الدفعة الأولى<br>من خريجات قسم التصميم بجامعة تبوك</p>
+  <div class="no en" aria-hidden="true">٠٣ / ٠٨</div>
 </section>
 
 <!-- ٤ قسم التدريب -->
-<section class="pg p-train" aria-label="قسم التدريب وعرض التصاميم على العميل">
+<div class="chap"><b>٠٤</b><span>قسم التصميم والتدريب</span></div>
+<section id="p4" class="pg fade p-train" aria-label="قسم التدريب وعرض التصاميم على العميل">
   <img class="ph ph1" src="../assets/training-2.jpg" alt="قاعة عرض التصاميم">
   <img class="ph ph2" src="../assets/training-1.jpg" alt="قاعة التدريب">
   <div class="blk">
@@ -225,10 +319,12 @@ h1,h2,h3,p{font-weight:500;line-height:1.75}
   </div>
   <img class="wm" src="../assets/wordmark-white.png" alt="Details decoration تفاصيل الديكور">
   <span class="vt">Details تفاصيل</span>
+  <div class="no en" aria-hidden="true">٠٤ / ٠٨</div>
 </section>
 
 <!-- ٥ الصالة -->
-<section class="pg p-hall" aria-label="صالة العرض">
+<div class="chap"><b>٠٥</b><span>صالة العرض</span></div>
+<section id="p5" class="pg fade p-hall" aria-label="صالة العرض">
   <div class="g">
     <img src="../assets/showroom-1.jpg" alt="مدخل المركز">
     <img src="../assets/showroom-2.jpg" alt="صالة الاستقبال">
@@ -238,10 +334,12 @@ h1,h2,h3,p{font-weight:500;line-height:1.75}
     <img src="../assets/showroom-6.jpg" alt="ركن عرض التصاميم">
   </div>
   <div class="embD"><img src="../assets/emblem-white.png" alt="شعار تفاصيل الديكور"></div>
+  <div class="no en" aria-hidden="true">٠٥ / ٠٨</div>
 </section>
 
 <!-- ٦ الواجهة -->
-<section class="pg p-face linepat" aria-label="واجهة المركز">
+<div class="chap"><b>٠٦</b><span>واجهة المركز</span></div>
+<section id="p6" class="pg fade p-face linepat" aria-label="واجهة المركز">
   <div class="side">
     <img class="abs emb" src="../assets/emblem-frame.jpg" alt="شعار تفاصيل الديكور">
     <img class="abs wm" src="../assets/wordmark-dark.png" alt="Details decoration تفاصيل الديكور">
@@ -250,10 +348,12 @@ h1,h2,h3,p{font-weight:500;line-height:1.75}
   <img class="ph1" src="../assets/facade-night.jpg" alt="لوحة الواجهة المضيئة ليلاً">
   <div class="dia dia1"></div>
   <img class="ph2" src="../assets/storefront.jpg" alt="واجهة المركز ليلاً">
+  <div class="no en" aria-hidden="true">٠٦ / ٠٨</div>
 </section>
 
 <!-- ٧ شركاء النجاح -->
-<section class="pg p-gov" aria-label="شركاء النجاح">
+<div class="chap"><b>٠٧</b><span>شركاء النجاح</span></div>
+<section id="p7" class="pg fade p-gov" aria-label="شركاء النجاح">
   <div class="tiles">
     <figure><img src="../assets/gov-1.jpg" alt="وزارة الصحة"></figure>
     <figure><img src="../assets/gov-2.jpg" alt="إمارة منطقة تبوك"></figure>
@@ -269,10 +369,12 @@ h1,h2,h3,p{font-weight:500;line-height:1.75}
     <img class="wm" src="../assets/wordmark-white.png" alt="Details decoration تفاصيل الديكور">
     <h2>شركاء النجاح</h2>
   </div>
+  <div class="no en" aria-hidden="true">٠٧ / ٠٨</div>
 </section>
 
 <!-- ٨ شركاء النجاح ٢ -->
-<section class="pg p-brands" aria-label="شركاء النجاح من العلامات التجارية">
+<div class="chap"><b>٠٨</b><span>شركاء النجاح · العلامات التجارية</span></div>
+<section id="p8" class="pg fade p-brands" aria-label="شركاء النجاح من العلامات التجارية">
   <div class="grp g1">
     <figure><img src="../assets/client-25.jpg" alt="Archirodon"></figure>
     <figure><img src="../assets/client-26.jpg" alt="مدارس الملك عبدالعزيز النموذجية"></figure>
@@ -319,7 +421,38 @@ h1,h2,h3,p{font-weight:500;line-height:1.75}
   <div class="joint j2"><img src="../assets/emblem-white.png" alt=""></div>
   <div class="joint j3"><img src="../assets/emblem-white.png" alt=""></div>
   <div class="joint j4"><img src="../assets/emblem-white.png" alt=""></div>
+  <div class="no en" aria-hidden="true">٠٨ / ٠٨</div>
 </section>
 
+<footer id="contact">
+  <div class="fin">
+    <div class="lgrid">
+      <a class="lnk" href="https://www.instagram.com/decorationdetails.s/" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><div><small>إنستغرام</small><b class="en">@decorationdetails.s</b></div></a>
+      <a class="lnk" href="https://decorationdetails.com" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24"><path d="M6 7h12l1 13H5L6 7z"/><path d="M9 10V6a3 3 0 016 0v4"/></svg></span><div><small>متجر اللوحات · سلة</small><b class="en">decorationdetails.com</b></div></a>
+      <a class="lnk" href="https://www.instagram.com/detailsart.sa/" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l2.2 4.5 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5L4.8 8.2l5-.7L12 3z"/></svg></span><div><small>قسم الفنون</small><b class="en">@detailsart.sa</b></div></a>
+      <a class="lnk" href="https://maps.app.goo.gl/dXkHPLgz7EMA9LL28" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><small>الموقع على الخريطة</small><b>شارع خالد بن الوليد، المصيف، تبوك</b></div></a>
+      <a class="lnk" href="tel:+966590599060"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></span><div><small>اتصال</small><b><span class="en">059 059 9060</span> · <span class="en">014 429 0020</span></b></div></a>
+      <a class="lnk" href="https://www.tiktok.com/@decoration_details" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24"><path d="M14 4v9.5a3.5 3.5 0 11-3.5-3.5"/><path d="M14 4c.5 2.5 2.2 4 4.5 4.3"/></svg></span><div><small>تيك توك</small><b class="en">@decoration_details</b></div></a>
+    </div>
+    <div class="meta"><span>يومياً من <span class="en">5:00</span> مساءً إلى <span class="en">10:30</span> مساءً</span><span>سناب شات <span class="en">@decor.details</span></span></div>
+    <div class="end"><span>© <span class="en">2026</span> تفاصيل الديكور. جميع الحقوق محفوظة.</span><span class="en">Details decoration · Tabuk</span></div>
+  </div>
+</footer>
+
+<a class="wa-fab" href="https://wa.me/966558113005" target="_blank" rel="noopener" aria-label="واتساب"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-1 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2z"/></svg></a>
+
+<script>
+(function(){try{
+  var prog=document.getElementById('prog'),nav=document.getElementById('nav');
+  function onScroll(){var h=document.documentElement;prog.style.transform='scaleX('+(h.scrollTop/(h.scrollHeight-h.clientHeight||1))+')';nav.classList.toggle('on',h.scrollTop>40);}
+  addEventListener('scroll',onScroll,{passive:true});onScroll();
+  var links=document.querySelectorAll('nav ul a');
+  var sio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('act',a.getAttribute('href')==='#'+e.target.id);});}});},{rootMargin:'-40% 0px -55% 0px'});
+  document.querySelectorAll('.pg[id],footer[id]').forEach(function(x){sio.observe(x);});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.08});
+  document.querySelectorAll('.pg.fade').forEach(function(x){io.observe(x);});
+  setTimeout(function(){document.querySelectorAll('.pg.fade').forEach(function(x){x.classList.add('in');});},2500);
+}catch(e){document.querySelectorAll('.pg.fade').forEach(function(x){x.classList.add('in');});}})();
+</script>
 </body>
 </html>
