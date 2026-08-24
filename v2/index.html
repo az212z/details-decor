@@ -23,7 +23,7 @@ html{-webkit-text-size-adjust:100%}
 body{background:var(--ink);font-family:var(--kufi);letter-spacing:normal;overflow-x:clip}
 [dir=rtl]{letter-spacing:0}
 img{display:block;max-width:100%}
-.pg{position:relative;width:min(96vw,1000px);aspect-ratio:1;margin:2.4vmin auto;overflow:hidden;container-type:inline-size;box-shadow:0 30px 80px -30px rgba(0,0,0,.75)}
+.pg{position:relative;width:100%;aspect-ratio:1;margin:0;overflow:hidden;container-type:inline-size}
 .abs{position:absolute}
 /* thin khatam line pattern for light pages */
 .linepat{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'><g fill='none' stroke='%23b9b2a6' stroke-width='.7' opacity='.5' transform='translate(75 75)'><rect x='-34' y='-34' width='68' height='68'/><rect x='-34' y='-34' width='68' height='68' transform='rotate(45)'/><rect x='-34' y='-34' width='68' height='68' transform='translate(-75 -75) rotate(45)'/><rect x='-34' y='-34' width='68' height='68' transform='translate(75 75) rotate(45)'/></g></svg>");background-size:15cqw}
@@ -184,16 +184,12 @@ nav ul a:hover,nav ul a.act{opacity:1;border-color:var(--lav2)}
 .cue{position:absolute;bottom:1.2rem;left:50%;translate:-50% 0;width:1px;height:44px;background:linear-gradient(var(--lav2),transparent);animation:cue 2.2s ease-in-out infinite}
 @keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 /* chapter labels + page polish */
-.chap{width:min(96vw,1000px);margin:4.2vmin auto 0;display:flex;align-items:center;gap:.9rem;color:#b9b4ac;font-size:.92rem}
-.chap b{color:var(--lav2);font-weight:600}
-.chap::after{content:"";flex:1;height:1px;background:rgba(255,255,255,.14)}
-.pg{transition:transform .6s cubic-bezier(.32,.72,0,1),box-shadow .6s,opacity .8s ease-out;scroll-margin-top:76px}
-.pg:hover{transform:translateY(-6px);box-shadow:0 46px 100px -34px rgba(0,0,0,.85)}
+.pg{transition:opacity .8s ease-out;scroll-margin-top:0}
 .pg .no{position:absolute;z-index:5;bottom:2cqw;inset-inline-end:2cqw;background:rgba(13,13,15,.8);color:#fff;font-size:1.5cqw;padding:.4cqw 1.4cqw;letter-spacing:0}
 .pg.fade{opacity:0}
 .pg.fade.in{opacity:1}
 /* footer */
-footer{margin-top:5vmin;background:#0a0a0b;color:#f2efe9;border-top:1px solid rgba(255,255,255,.1)}
+footer{margin-top:0;background:#0a0a0b;color:#f2efe9;border-top:1px solid rgba(255,255,255,.1)}
 footer .fin{width:min(96vw,1000px);margin-inline:auto;padding:3.4rem 0 2rem}
 footer .lgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;margin-bottom:2rem}
 .lnk{display:flex;align-items:center;gap:.9rem;padding:.95rem 1.05rem;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.03);text-decoration:none;color:inherit;transition:all .35s}
@@ -244,7 +240,6 @@ footer .end{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;m
 </header>
 
 <!-- ١ قصة تفاصيل -->
-<div class="chap"><b>٠١</b><span>تبدأ تفاصيل القصة</span></div>
 <section id="p1" class="pg fade p-story linepat" aria-label="تبدأ تفاصيل القصة">
   <img class="abs flow2" src="../assets/flowers-2.jpg" alt="">
   <img class="abs flow1" src="../assets/flowers.jpg" alt="">
@@ -266,7 +261,6 @@ footer .end{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;m
 </section>
 
 <!-- ٢ الضمان -->
-<div class="chap"><b>٠٢</b><span>الضمان</span></div>
 <section id="p2" class="pg fade p-daman linepat" aria-label="الضمان">
   <div class="xg xg1 abs"></div><div class="xg xg2 abs"></div>
   <img class="wmk wmk1" src="../assets/wordmark-dark.png" alt="">
@@ -283,7 +277,6 @@ footer .end{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;m
 </section>
 
 <!-- ٣ خدماتنا -->
-<div class="chap"><b>٠٣</b><span>خدماتنا</span></div>
 <section id="p3" class="pg fade p-serv linepat" aria-label="خدماتنا">
   <img class="wmk wmk1" src="../assets/wordmark-dark.png" alt="">
   <img class="wmk wmk2" src="../assets/wordmark-dark.png" alt="">
@@ -307,7 +300,6 @@ footer .end{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;m
 </section>
 
 <!-- ٤ قسم التدريب -->
-<div class="chap"><b>٠٤</b><span>قسم التصميم والتدريب</span></div>
 <section id="p4" class="pg fade p-train" aria-label="قسم التدريب وعرض التصاميم على العميل">
   <img class="ph ph1" src="../assets/training-2.jpg" alt="قاعة عرض التصاميم">
   <img class="ph ph2" src="../assets/training-1.jpg" alt="قاعة التدريب">
@@ -322,7 +314,6 @@ footer .end{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;m
 </section>
 
 <!-- ٥ الصالة -->
-<div class="chap"><b>٠٥</b><span>صالة العرض</span></div>
 <section id="p5" class="pg fade p-hall" aria-label="صالة العرض">
   <div class="g">
     <img src="../assets/showroom-1.jpg" alt="مدخل المركز">
@@ -337,7 +328,6 @@ footer .end{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;m
 </section>
 
 <!-- ٦ الواجهة -->
-<div class="chap"><b>٠٦</b><span>واجهة المركز</span></div>
 <section id="p6" class="pg fade p-face linepat" aria-label="واجهة المركز">
   <div class="side">
     <img class="abs emb" src="../assets/emblem-frame.jpg" alt="شعار تفاصيل الديكور">
@@ -351,7 +341,6 @@ footer .end{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;m
 </section>
 
 <!-- ٧ شركاء النجاح -->
-<div class="chap"><b>٠٧</b><span>شركاء النجاح</span></div>
 <section id="p7" class="pg fade p-gov" aria-label="شركاء النجاح">
   <div class="tiles">
     <figure><img src="../assets/gov-1.jpg" alt="وزارة الصحة"></figure>
@@ -372,7 +361,6 @@ footer .end{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;m
 </section>
 
 <!-- ٨ شركاء النجاح ٢ -->
-<div class="chap"><b>٠٨</b><span>شركاء النجاح · العلامات التجارية</span></div>
 <section id="p8" class="pg fade p-brands" aria-label="شركاء النجاح من العلامات التجارية">
   <div class="grp g1">
     <figure><img src="../assets/client-25.jpg" alt="Archirodon"></figure>
