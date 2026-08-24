@@ -47,15 +47,24 @@ section,header{position:relative;overflow:hidden;contain:paint}
 .top a.call:hover{background:#fff;color:var(--ink)}
 
 /* 1 hero */
-#hero{min-height:96svh;display:grid;place-items:center;background:var(--ink);color:#fff;text-align:center}
+#hero{min-height:100svh;display:grid;place-items:center;background:var(--ink);color:#fff;text-align:center}
 #hero .bg{position:absolute;inset:0}
 #hero .bg img{width:100%;height:100%;object-fit:cover;object-position:center 62%}
-#hero .bg::after{content:"";position:absolute;inset:0;background:radial-gradient(90% 90% at 50% 45%,rgba(10,10,11,.22),rgba(10,10,11,.78))}
-#hero .c{position:relative;display:grid;justify-items:center;gap:1rem;padding:6rem 1rem 3rem}
-#hero .wm{height:64px;width:auto;filter:drop-shadow(0 6px 30px rgba(0,0,0,.6))}
-#hero .sep{width:1px;height:44px;background:linear-gradient(rgba(255,255,255,.7),transparent)}
-#hero h1{font-size:clamp(1.15rem,2.6vw,1.6rem);font-weight:400;color:#e8e5df}
-#hero small{color:#b5b1aa;font-size:.9rem}
+#hero .bg::after{content:"";position:absolute;inset:0;background:radial-gradient(95% 95% at 50% 42%,rgba(10,10,11,.3),rgba(10,10,11,.86))}
+#hero .frame{position:absolute;inset:clamp(12px,2.4vw,26px);border:1px solid rgba(255,255,255,.32);pointer-events:none}
+#hero .frame i{position:absolute;width:16px;height:16px;border:1px solid var(--lav2)}
+#hero .frame i:nth-child(1){top:-1px;inset-inline-start:-1px;border-inline-end:0;border-bottom:0}
+#hero .frame i:nth-child(2){top:-1px;inset-inline-end:-1px;border-inline-start:0;border-bottom:0}
+#hero .frame i:nth-child(3){bottom:-1px;inset-inline-start:-1px;border-inline-end:0;border-top:0}
+#hero .frame i:nth-child(4){bottom:-1px;inset-inline-end:-1px;border-inline-start:0;border-top:0}
+#hero .c{position:relative;display:grid;justify-items:center;gap:1.1rem;padding:6rem 1.4rem 4rem;max-width:60rem}
+#hero .wm{height:60px;width:auto;filter:drop-shadow(0 6px 30px rgba(0,0,0,.6))}
+#hero .sep{width:1px;height:40px;background:linear-gradient(rgba(255,255,255,.75),transparent)}
+#hero h1{font-size:clamp(1.7rem,4.4vw,3rem);font-weight:500;line-height:1.75;color:#fff;text-wrap:balance;text-shadow:0 4px 30px rgba(0,0,0,.55)}
+#hero h1 span{color:var(--lav2)}
+#hero p.sline{color:#dcd8d1;font-size:clamp(1rem,1.8vw,1.15rem);max-width:44ch}
+#hero small{color:#b5b1aa;font-size:.9rem;display:flex;gap:1.2rem;flex-wrap:wrap;justify-content:center}
+#hero small b{font-weight:500;color:#e8e5df}
 
 /* 2 story on black */
 #story{background:var(--ink);color:#efece6;padding:6rem 0}
@@ -135,11 +144,13 @@ section,header{position:relative;overflow:hidden;contain:paint}
 <!-- ١ المبنى من الخارج -->
 <header id="hero">
   <div class="bg"><img src="../assets/storefront.jpg" alt="مبنى تفاصيل الديكور من الخارج في تبوك" fetchpriority="high"></div>
+  <div class="frame" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
   <div class="c">
     <img class="wm" src="../assets/wordmark-white.png" alt="Details decoration تفاصيل الديكور">
     <div class="sep" aria-hidden="true"></div>
-    <h1>مركز الديكور الداخلي والفنون</h1>
-    <small>تبوك · شارع خالد بن الوليد · تقييم <span class="num">4.8</span> ★ على Google</small>
+    <h1>حينما تلتقي <span>عراقة التصميم</span> وهوية التاريخ وسط بيت الطين</h1>
+    <p class="sline">مركز الديكور الداخلي والفنون</p>
+    <small><b>تبوك · شارع خالد بن الوليد</b><span>تقييم <span class="num">4.8</span> ★ على Google</span></small>
   </div>
 </header>
 
@@ -147,7 +158,7 @@ section,header{position:relative;overflow:hidden;contain:paint}
 <section id="story" class="center">
   <div class="wrap">
     <span class="k">قصة المشروع</span>
-    <h2>حينما تلتقي <span>عراقة التصميم</span> وهوية التاريخ</h2>
+    <h2>تبدأ تفاصيل <span>القصة</span></h2>
     <figure class="board"><img src="../assets/pages/page-1.jpg" alt="لوحة قصة تفاصيل كما صممها المركز" loading="lazy"></figure>
     <p><b>حلم يحمل قصة عشق (لتفاصيل)</b> الفن الإسلامي العريق الذي أسس أهم القواعد الهندسية في التصميم والفنون.</p>
     <p class="l2">أخذ الحلم لون <b>الخزامى</b> الذي يكسو صحراء وطن قادر على صنع المستحيل، ويحمل قاعدة التوازن اللوني بين السماء والأرض.</p>
@@ -157,12 +168,9 @@ section,header{position:relative;overflow:hidden;contain:paint}
 <!-- ٣ من الخارج ومن الداخل -->
 <section id="place" class="center">
   <div class="wrap">
-    <span class="k">المبنى والصالة</span>
-    <h2>من الخارج .. ومن الداخل</h2>
+    <span class="k">الصالة من الداخل</span>
+    <h2>الصالة والتفاصيل</h2>
     <div class="rule"></div>
-    <div class="cap"><b>من الخارج</b><span>الواجهة على شارع خالد بن الوليد، حي المصيف</span></div>
-    <figure><img src="../assets/facade-night.jpg" alt="واجهة المبنى المضيئة من الخارج" style="object-position:center 30%" loading="lazy"></figure>
-    <div class="cap"><b>من الداخل</b><span>الصالة والتفاصيل</span></div>
     <div class="duo">
       <figure><img src="../assets/showroom-2.jpg" alt="صالة عرض التصاميم من الداخل" loading="lazy"></figure>
       <figure><img src="../assets/showroom-6.jpg" alt="أركان العرض والتفاصيل من الداخل" loading="lazy"></figure>
