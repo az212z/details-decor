@@ -207,6 +207,108 @@ footer .end{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;m
 @media (max-width:900px){nav ul{display:none}footer .lgrid{grid-template-columns:1fr 1fr}}
 @media (max-width:640px){footer .lgrid{grid-template-columns:1fr}#cover{min-height:64svh}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.pg.fade{opacity:1}}
+
+/* ===== pro upgrades ===== */
+@media (min-width:701px){
+  html{scroll-snap-type:y proximity}
+  .pg{scroll-snap-align:start}
+}
+/* staggered inner reveal (graceful везде) */
+@media (prefers-reduced-motion:no-preference){
+  .pg.fade .abs,.pg.fade .ph,.pg.fade .blk>*,.pg.fade ol li,.pg.fade .tiles figure,.pg.fade .grp figure,.pg.fade .g img,.pg.fade .panel>*{opacity:0;transform:translateY(14px);transition:opacity .8s ease-out,transform .9s cubic-bezier(.16,1,.3,1)}
+  .pg.fade.in .abs,.pg.fade.in .ph,.pg.fade.in .blk>*,.pg.fade.in ol li,.pg.fade.in .tiles figure,.pg.fade.in .grp figure,.pg.fade.in .g img,.pg.fade.in .panel>*{opacity:1;transform:none;transition-delay:calc(sibling-index()*70ms)}
+}
+/* interactions */
+.p-hall .g img,.p-train .ph,.p-face .ph1,.p-face .ph2{cursor:zoom-in;transition:transform .8s cubic-bezier(.32,.72,0,1),filter .5s}
+.p-hall .g img:hover,.p-train .ph:hover,.p-face .ph1:hover,.p-face .ph2:hover{transform:scale(1.03)}
+.p-gov .tiles figure,.p-brands .grp figure{transition:transform .5s cubic-bezier(.32,.72,0,1),box-shadow .5s}
+.p-gov .tiles figure:hover,.p-brands .grp figure:hover{transform:translateY(-4px) scale(1.03);box-shadow:0 14px 30px -12px rgba(0,0,0,.7);z-index:3}
+.p-serv ol li{transition:background .35s,padding .35s}
+.p-serv ol li:hover{background:linear-gradient(90deg,transparent,rgba(255,255,255,.9) 25%,rgba(255,255,255,.9) 88%,transparent);padding-inline-start:1cqw}
+dialog.lb{border:0;padding:0;background:transparent;max-width:min(96vw,1100px);max-height:92vh}
+dialog.lb::backdrop{background:rgba(8,8,10,.93);backdrop-filter:blur(10px)}
+dialog.lb img{max-height:86vh;max-width:96vw;width:auto;border:6px solid #fff}
+dialog.lb button{position:absolute;top:-.4rem;right:-.4rem;width:42px;height:42px;border:0;background:#fff;cursor:pointer;font-size:1rem}
+/* ===== mobile reflow: نفس التصميم، تدفق مقروء ===== */
+@media (max-width:700px){
+  .pg{aspect-ratio:auto;container-type:normal}
+  .pg .no{display:none}
+  .wmk,.xr,.xg{display:none}
+  /* p1 */
+  .p-story{display:flex;flex-direction:column;align-items:center;text-align:center;padding:3rem 1.3rem;gap:.35rem}
+  .p-story .abs{position:static}
+  .p-story .flow2{display:none}
+  .p-story .emb{order:1;width:120px}
+  .p-story .wm{order:2;width:170px;margin-bottom:.8rem}
+  .p-story .t1{order:3;font-size:1.5rem;line-height:1.8}
+  .p-story .waw{order:4;font-size:2.2rem;line-height:1}
+  .p-story .t2{order:5;font-size:1.5rem}
+  .p-story .t3{order:6;font-size:1.4rem;margin-bottom:.6rem}
+  .p-story .flow1{order:7;width:100%;max-width:340px;margin:.6rem 0}
+  .p-story .t4{order:8;font-size:1.45rem;color:var(--lav)}
+  .p-story .par{order:9;width:100%;max-width:34rem;font-size:.95rem;text-align:center}
+  .p-story .t5{order:10;font-size:1.3rem}
+  .p-story .t6{order:11;font-size:.98rem}
+  /* p2 */
+  .p-daman{display:flex;flex-direction:column;align-items:center;text-align:center;padding:3rem 1.3rem;gap:.4rem}
+  .p-daman .abs{position:static}
+  .p-daman .t1{font-size:1.15rem}
+  .p-daman .n12{font-size:3rem}
+  .p-daman .par{width:100%;max-width:32rem;font-size:.95rem}
+  .p-daman .emb{width:150px;margin-top:1rem}
+  .p-daman .wm{width:170px;filter:none;margin-bottom:.6rem}
+  .p-daman .big{font-size:2.6rem}
+  .p-daman .sub{font-size:1.2rem}
+  .p-daman .sub2{width:100%;max-width:32rem;font-size:.95rem}
+  /* p3 */
+  .p-serv{display:flex;flex-direction:column;align-items:center;padding:3rem 1.3rem;gap:.4rem}
+  .p-serv .abs{position:static}
+  .p-serv .t1{font-size:1.6rem}
+  .p-serv ol{position:static;width:100%;max-width:34rem;font-size:.95rem}
+  .p-serv ol li{padding:.65rem 0;border-bottom:1px solid rgba(0,0,0,.08)}
+  .p-serv ol li::before{width:.55rem;height:.55rem}
+  .p-serv .emb{width:140px;margin-top:1.2rem}
+  .p-serv .wm{width:170px}
+  .p-serv .t2{font-size:1.2rem;margin-top:1rem}
+  .p-serv .t3{width:100%;font-size:.95rem}
+  /* p4 */
+  .p-train{display:flex;flex-direction:column}
+  .p-train .ph{position:static;width:100%;height:56vw}
+  .p-train .blk{position:static;width:100%;padding:2.6rem 1.3rem;display:flex;flex-direction:column;align-items:center;gap:1.1rem;order:-1}
+  .p-train .cap{position:static;width:100%;font-size:1.05rem;color:#f2efe9}
+  .p-train .embD{position:static;width:110px}
+  .p-train .wm{position:static;width:180px}
+  .p-train .vt{display:none}
+  /* p5 */
+  .p-hall .g{position:static;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px}
+  .p-hall .g img{aspect-ratio:4/3}
+  .p-hall{padding:0}
+  .p-hall .embD{display:none}
+  /* p6 */
+  .p-face{display:flex;flex-direction:column;background:var(--paperw)}
+  .p-face .side{position:static;width:100%;display:flex;flex-direction:column;align-items:center;padding:2.6rem 1.3rem 1.4rem;gap:1rem}
+  .p-face .side .flow{display:none}
+  .p-face .emb{position:static;width:140px}
+  .p-face .wm{position:static;width:180px}
+  .p-face .ph1{position:static;width:100%;height:64vw}
+  .p-face .ph2{position:static;width:100%;height:44vw}
+  .p-face .dia{display:none}
+  /* p7 */
+  .p-gov{display:flex;flex-direction:column}
+  .p-gov .panel{position:static;width:100%;padding:2.6rem 1.3rem;order:-1}
+  .p-gov .panel h2{font-size:1.7rem}
+  .p-gov .embD{width:110px}
+  .p-gov .wm{width:180px}
+  .p-gov .tiles{position:static;width:100%;grid-template-columns:1fr 1fr;gap:10px;padding:0 1rem 1.6rem}
+  .p-gov .tiles figure{border-width:2px;padding:6px}
+  /* p8 */
+  .p-brands{display:flex;flex-direction:column;gap:12px;padding:1.2rem 1rem}
+  .p-brands .grp{position:static!important;width:100%!important;translate:0 0!important;grid-template-columns:1fr 1fr 1fr;gap:8px}
+  .p-brands .grp figure{aspect-ratio:8/5;border-width:1.5px}
+  .p-brands .joint{display:none}
+  /* cover mobile */
+  #cover h1{font-size:1.05rem;padding:0 .6rem}
+}
 </style>
 </head>
 <body>
@@ -426,6 +528,8 @@ footer .end{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;m
   </div>
 </footer>
 
+<dialog class="lb" id="lb"><figure style="margin:0;position:relative"><button id="lbx" aria-label="إغلاق">✕</button><img id="lbimg" src="" alt=""></figure></dialog>
+
 <a class="wa-fab" href="https://wa.me/966558113005" target="_blank" rel="noopener" aria-label="واتساب"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-1 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2z"/></svg></a>
 
 <script>
@@ -439,6 +543,10 @@ footer .end{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;m
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.08});
   document.querySelectorAll('.pg.fade').forEach(function(x){io.observe(x);});
   setTimeout(function(){document.querySelectorAll('.pg.fade').forEach(function(x){x.classList.add('in');});},2500);
+  var lb=document.getElementById('lb'),lbi=document.getElementById('lbimg');
+  document.querySelectorAll('.p-hall .g img,.p-train .ph,.p-face .ph1,.p-face .ph2').forEach(function(im){im.addEventListener('click',function(){lbi.src=im.src;lbi.alt=im.alt;lb.showModal();});});
+  document.getElementById('lbx').addEventListener('click',function(){lb.close();});
+  lb.addEventListener('click',function(e){if(e.target===lb)lb.close();});
 }catch(e){document.querySelectorAll('.pg.fade').forEach(function(x){x.classList.add('in');});}})();
 </script>
 </body>
