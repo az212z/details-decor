@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تفاصيل الديكور | الملف التعريفي</title>
+<meta name="description" content="الملف التعريفي لمركز تفاصيل الديكور في تبوك، بتصميم صفحات الملف نفسها.">
+<meta property="og:title" content="تفاصيل الديكور | الملف التعريفي">
+<meta property="og:image" content="../assets/pages/page-1.jpg">
+<meta name="theme-color" content="#0d0d0f">
+<link rel="icon" href="../assets/emblem-black.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0d0d0f;--paperw:#fbfaf7;--grey:#dcd9d3;--grey2:#cfccc5;
+  --tan:#c6b9a0;--lav:#6f55a3;--lav2:#8d74c4;
+  --kufi:"Reem Kufi",Tahoma,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--ink);font-family:var(--kufi);letter-spacing:normal;overflow-x:clip}
+[dir=rtl]{letter-spacing:0}
+img{display:block;max-width:100%}
+.pg{position:relative;width:min(96vw,1000px);aspect-ratio:1;margin:2.4vmin auto;overflow:hidden;container-type:inline-size;box-shadow:0 30px 80px -30px rgba(0,0,0,.75)}
+.abs{position:absolute}
+/* thin khatam line pattern for light pages */
+.linepat{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'><g fill='none' stroke='%23b9b2a6' stroke-width='.7' opacity='.5' transform='translate(75 75)'><rect x='-34' y='-34' width='68' height='68'/><rect x='-34' y='-34' width='68' height='68' transform='rotate(45)'/><rect x='-34' y='-34' width='68' height='68' transform='translate(-75 -75) rotate(45)'/><rect x='-34' y='-34' width='68' height='68' transform='translate(75 75) rotate(45)'/></g></svg>");background-size:15cqw}
+/* tan X ribbons */
+.xr{position:absolute;width:150cqw;height:9cqw;background:var(--tan);opacity:.85}
+/* watermark */
+.wmk{position:absolute;opacity:.1;filter:grayscale(1);width:34cqw;pointer-events:none}
+/* pattern-framed emblem (exact element from the file) */
+.emb{position:absolute;box-shadow:none}
+.emb img{width:100%}
+/* dark emblem box for dark pages */
+.embD{position:absolute;border:.22cqw solid rgba(255,255,255,.85);padding:1.6cqw;background:#000}
+.embD::before{content:"";position:absolute;inset:.8cqw;border:.14cqw solid rgba(255,255,255,.4)}
+.embD img{width:100%}
+h1,h2,h3,p{font-weight:500;line-height:1.75}
+.lv{color:var(--lav)}
+.lv2{color:var(--lav2)}
+
+/* ============ page 1: القصة ============ */
+.p-story{background:var(--paperw)}
+.p-story .flow1{right:0;bottom:0;width:56cqw;mix-blend-mode:multiply}
+.p-story .flow2{right:0;top:0;width:42cqw;mix-blend-mode:multiply;opacity:.9}
+.p-story .xr1{transform:rotate(45deg);left:-46cqw;top:36cqw}
+.p-story .xr2{transform:rotate(-45deg);left:-46cqw;top:36cqw}
+.p-story .xr{opacity:.5;width:120cqw;height:7cqw}
+.p-story .emb{left:41cqw;top:9cqw;width:17cqw}
+.p-story .wm{left:38cqw;top:28cqw;width:23cqw}
+.p-story .t1{left:13cqw;top:10cqw;font-size:3.1cqw;text-align:start;line-height:2}
+.p-story .t1 small{display:block;font-size:.45em;color:#5a5650}
+.p-story .waw{left:31cqw;top:14.5cqw;font-size:7cqw;color:var(--lav);font-weight:700}
+.p-story .t2{left:8cqw;top:23cqw;font-size:3.1cqw}
+.p-story .t2 small{display:block;font-size:.42em;color:#5a5650}
+.p-story .t3{left:14cqw;top:33.5cqw;font-size:2.9cqw}
+.p-story .t4{left:12cqw;top:44cqw;font-size:3cqw}
+.p-story .par{left:5cqw;top:50cqw;width:38cqw;font-size:1.55cqw;color:#242220;text-align:start}
+.p-story .par p{margin-bottom:1.3cqw}
+.p-story .t5{left:14cqw;top:70.5cqw;font-size:2.6cqw;color:var(--lav)}
+.p-story .t6{left:6cqw;top:75.5cqw;font-size:1.75cqw;color:#242220}
+.p-story .t6 b{color:var(--lav);font-weight:600}
+
+/* ============ page 2: الضمان ============ */
+.p-daman{background:linear-gradient(150deg,#e9e6e1,#d7d4ce 55%,#c9c6c0)}
+.p-daman .xg{width:150cqw;height:10cqw;background:#c3bfb8;opacity:.5}
+.p-daman .xg1{transform:rotate(45deg);left:-60cqw;top:30cqw}
+.p-daman .xg2{transform:rotate(-45deg);left:-60cqw;top:30cqw}
+.p-daman .wmk1{top:6cqw;left:4cqw}
+.p-daman .wmk2{bottom:18cqw;left:6cqw}
+.p-daman .emb{right:9cqw;top:7cqw;width:30cqw}
+.p-daman .wm{right:12cqw;top:41cqw;width:24cqw;filter:drop-shadow(0 0 2cqw rgba(255,255,255,.8))}
+.p-daman .t1{left:8cqw;top:8cqw;font-size:2.5cqw;color:#242220}
+.p-daman .n12{left:8cqw;top:12cqw;font-size:8.5cqw;color:var(--lav);font-weight:700;line-height:1.2}
+.p-daman .n12 small{font-size:.3em;color:#242220;font-weight:500}
+.p-daman .par{left:6cqw;top:27cqw;width:36cqw;font-size:1.8cqw;color:#242220;text-align:center}
+.p-daman .big{right:12cqw;top:60cqw;font-size:7.5cqw;color:var(--lav);font-weight:700;text-shadow:0 0 4cqw rgba(255,255,255,.9)}
+.p-daman .sub{right:7cqw;top:72cqw;font-size:2.6cqw;color:var(--lav)}
+.p-daman .sub2{right:5cqw;top:77cqw;width:44cqw;font-size:1.9cqw;color:#242220;text-align:center}
+
+/* ============ page 3: الخدمات ============ */
+.p-serv{background:linear-gradient(160deg,#e9e6e1,#d5d2cc 60%,#c7c4be)}
+.p-serv .wmk1{top:4cqw;left:6cqw}
+.p-serv .wmk2{bottom:8cqw;left:8cqw;opacity:.08}
+.p-serv .t1{right:8cqw;top:8cqw;font-size:3.4cqw;color:var(--lav)}
+.p-serv ol{position:absolute;right:5cqw;top:16cqw;width:52cqw;list-style:none;font-size:1.85cqw;color:#1c1a18}
+.p-serv ol li{display:flex;gap:1.6cqw;align-items:center;justify-content:flex-start;padding:1.35cqw 0}
+.p-serv ol li::before{content:"";flex:none;width:1.5cqw;height:1.5cqw;background:#111}
+.p-serv ol li span{order:1;text-align:start;flex:1}
+.p-serv ol li:nth-child(2){background:linear-gradient(90deg,transparent,rgba(255,255,255,.85) 30%,rgba(255,255,255,.85) 85%,transparent)}
+.p-serv .emb{left:10cqw;top:14cqw;width:30cqw}
+.p-serv .wm{left:10cqw;top:48cqw;width:30cqw}
+.p-serv .t2{left:14cqw;bottom:20cqw;font-size:2.4cqw;color:var(--lav)}
+.p-serv .t3{left:6cqw;bottom:11cqw;width:44cqw;font-size:1.8cqw;color:var(--lav);opacity:.9;text-align:center}
+
+/* ============ page 4: التدريب ============ */
+.p-train{background:#0a0a0b}
+.p-train .ph{position:absolute;right:0;width:50cqw;height:50cqw;object-fit:cover}
+.p-train .ph1{top:0}
+.p-train .ph2{bottom:0}
+.p-train .blk{position:absolute;left:0;top:0;bottom:0;width:50cqw;background:#0a0a0b;overflow:hidden}
+.p-train .blk .xd{position:absolute;width:120cqw;height:8cqw;background:#17171a}
+.p-train .blk .xd1{transform:rotate(45deg);left:-40cqw;top:40cqw}
+.p-train .blk .xd2{transform:rotate(-45deg);left:-40cqw;top:40cqw}
+.p-train .cap{position:absolute;left:5cqw;top:7cqw;font-size:1.9cqw;color:#dcd8d1;width:40cqw;text-align:center}
+.p-train .embD{left:16cqw;top:26cqw;width:17cqw}
+.p-train .wm{position:absolute;left:12cqw;top:50cqw;width:26cqw}
+.p-train .vt{position:absolute;left:1.5cqw;bottom:6cqw;font-size:1.7cqw;color:#8f8b84;writing-mode:vertical-rl;letter-spacing:0}
+
+/* ============ page 5: الصالة ============ */
+.p-hall{background:#161618}
+.p-hall .g{position:absolute;inset:2.6cqw;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr 1fr;gap:2.6cqw}
+.p-hall .g img{width:100%;height:100%;object-fit:cover}
+.p-hall .embD{left:50%;top:50%;translate:-50% -50%;width:13cqw;z-index:2;background:#0a0a0b}
+
+/* ============ page 6: الواجهة ============ */
+.p-face{background:var(--paperw)}
+.p-face .side{position:absolute;left:0;top:0;bottom:0;width:38cqw}
+.p-face .side .flow{position:absolute;bottom:0;left:0;width:34cqw;mix-blend-mode:multiply}
+.p-face .emb{left:9cqw;top:12cqw;width:20cqw}
+.p-face .wm{left:6cqw;top:36cqw;width:26cqw}
+.p-face .ph1{position:absolute;right:0;top:0;width:60cqw;height:62cqw;object-fit:cover}
+.p-face .ph2{position:absolute;right:0;bottom:0;width:66cqw;height:34cqw;object-fit:cover}
+.p-face .dia{position:absolute;width:70cqw;height:5cqw;background:var(--paperw)}
+.p-face .dia1{transform:rotate(-45deg);right:-14cqw;top:56cqw}
+.p-face .dia2{transform:rotate(45deg);left:22cqw;top:20cqw;width:40cqw;height:4cqw}
+
+/* ============ pages 7/8: الشركاء ============ */
+.p-gov{background:#0a0a0b url("../assets/gold-pattern.jpg");background-size:44cqw}
+.p-gov .panel{position:absolute;right:0;top:0;bottom:0;width:46cqw;display:grid;place-content:center;justify-items:center;gap:3cqw;background:rgba(10,10,11,.35)}
+.p-gov .embD{position:relative;width:22cqw}
+.p-gov .wm{width:30cqw}
+.p-gov h2{font-size:4cqw;color:#fff;font-weight:500}
+.p-gov .tiles{position:absolute;left:5cqw;top:9cqw;bottom:9cqw;width:44cqw;display:grid;grid-template-columns:1fr 1fr;gap:2.6cqw}
+.p-gov .tiles figure{background:#fff;border:.5cqw solid #cbb27a;padding:.8cqw;margin:0;display:grid;place-items:center}
+.p-gov .tiles img{width:100%;height:100%;object-fit:contain}
+.p-brands{background:#0a0a0b url("../assets/gold-pattern.jpg");background-size:44cqw}
+.p-brands .grp{position:absolute;top:5cqw;bottom:5cqw;display:grid;grid-template-columns:1fr 1fr;gap:1.6cqw;align-content:stretch}
+.p-brands .grp.g1{right:3cqw;width:27cqw}
+.p-brands .grp.g2{left:50%;translate:-50% 0;width:31cqw;top:3cqw;bottom:3cqw}
+.p-brands .grp.g3{left:3cqw;width:27cqw}
+.p-brands figure{margin:0;display:grid;place-items:center;overflow:hidden;border:.35cqw solid rgba(255,255,255,.9)}
+.p-brands .grp.g2 figure{border-color:rgba(255,255,255,.85)}
+.p-brands img{width:100%;height:100%;object-fit:contain}
+.p-brands .grp.g1 figure,.p-brands .grp.g3 figure{background:#fff}
+.p-brands .grp.g2 figure{background:#0b0b0d}
+.p-brands .joint{position:absolute;width:5cqw;aspect-ratio:1;background:#0a0a0b;border:.3cqw solid #fff;display:grid;place-items:center;z-index:2}
+.p-brands .joint img{width:70%;height:auto;object-fit:contain}
+.p-brands .j1{right:28.5cqw;top:24cqw}
+.p-brands .j2{right:28.5cqw;bottom:24cqw}
+.p-brands .j3{left:28.5cqw;top:24cqw}
+.p-brands .j4{left:28.5cqw;bottom:24cqw}
+</style>
+</head>
+<body>
+
+<!-- ١ قصة تفاصيل -->
+<section class="pg p-story linepat" aria-label="تبدأ تفاصيل القصة">
+  <img class="abs flow2" src="../assets/flowers-2.jpg" alt="">
+  <img class="abs flow1" src="../assets/flowers.jpg" alt="">
+  <div class="xr xr1"></div><div class="xr xr2"></div>
+  <img class="abs emb" src="../assets/emblem-frame.jpg" alt="شعار تفاصيل الديكور">
+  <img class="abs wm" src="../assets/wordmark-dark.png" alt="Details decoration تفاصيل الديكور">
+  <h2 class="abs t1">حينما تلتقي ...<br>عراقة التصميم<small>الفن الاسلامي</small></h2>
+  <div class="abs waw">و</div>
+  <h2 class="abs t2">هوية التاريخ<small>زهرة الخزامى</small></h2>
+  <h2 class="abs t3">وسط بيت الطين</h2>
+  <h2 class="abs t4">تبدأ تفاصيل القصة</h2>
+  <div class="abs par">
+    <p>حلم .. يحمل قصة عشق (لتفاصيل) الفن الإسلامي العريق الذي استمر على مر التاريخ وأسس أهم القواعد الهندسية في مجال التصميم والفنون.</p>
+    <p>أخذ هذا الحلم لون (الخزامى) الذي يكسو صحراء وطن قادر على صنع المستحيل. اللون الذي نراه في نهاية كل طيف، يدل على استمرار الحلم والطموح، لون الاعتدال والوضوح ونفاذ البصيرة والشغف والذكاء والحب والحكمة.</p>
+  </div>
+  <h3 class="abs t5">اللون الذي</h3>
+  <p class="abs t6">يحمل <b>قاعدة التوازن اللوني</b> بين السماء والأرض</p>
+</section>
+
+<!-- ٢ الضمان -->
+<section class="pg p-daman linepat" aria-label="الضمان">
+  <div class="xg xg1 abs"></div><div class="xg xg2 abs"></div>
+  <img class="wmk wmk1" src="../assets/wordmark-dark.png" alt="">
+  <img class="wmk wmk2" src="../assets/wordmark-dark.png" alt="">
+  <img class="abs emb" src="../assets/emblem-frame.jpg" alt="شعار تفاصيل الديكور">
+  <img class="abs wm" src="../assets/wordmark-white.png" alt="Details decoration تفاصيل الديكور">
+  <h2 class="abs t1">تشرفنا بخدمة أكثر</h2>
+  <div class="abs n12"><span class="en">12.000</span> <small>عميل</small></div>
+  <p class="abs par">ولله الحمد لم تقدم أي دعوة ضد المؤسسة للجهات المعنية وتقييم العملاء مميز<br>نطاق المؤسسة مرتفع بشكل مستمر ويوجد ثناء من الجهات ذات العلاقة</p>
+  <h2 class="abs big">الضمان</h2>
+  <h3 class="abs sub">على جودة المنتج ودقة التركيب</h3>
+  <p class="abs sub2">كما نتعهد أمام العميل بأننا نستخدم أفضل وأجود أنواع الخامات المستخدمة في التركيب</p>
+</section>
+
+<!-- ٣ خدماتنا -->
+<section class="pg p-serv linepat" aria-label="خدماتنا">
+  <img class="wmk wmk1" src="../assets/wordmark-dark.png" alt="">
+  <img class="wmk wmk2" src="../assets/wordmark-dark.png" alt="">
+  <h2 class="abs t1">خدماتنا ..</h2>
+  <ol>
+    <li><span>تصميم الديكور الداخلي والخارجي عن طريق برامج الثري دي</span></li>
+    <li><span>تنفيذ جميع أعمال الديكور الداخلي</span></li>
+    <li><span>الإشراف على تنفيذ أعمال الديكور</span></li>
+    <li><span>تنسيق المكان بشكل مجاني للعميل</span></li>
+    <li><span>تقديم الاستشارات الخاصة بالديكور الداخلي</span></li>
+    <li><span>إقامة المعارض الخاصة بالديكور الداخلي والتصميم والفنون</span></li>
+    <li><span>تصميم وطباعة اللوحات الفنية وورق الحائط</span></li>
+    <li><span>تصميم الهوية الإعلانية للشركات والمؤسسات</span></li>
+    <li><span>تنظيم الاحتفالات والمناسبات الرسمية</span></li>
+  </ol>
+  <img class="abs emb" src="../assets/emblem-frame.jpg" alt="شعار تفاصيل الديكور">
+  <img class="abs wm" src="../assets/wordmark-dark.png" alt="Details decoration تفاصيل الديكور">
+  <h3 class="abs t2">التدريب على التصميم والديكور الداخلي</h3>
+  <p class="abs t3">وكان آخرها تدريب الدفعة الأولى<br>من خريجات قسم التصميم بجامعة تبوك</p>
+</section>
+
+<!-- ٤ قسم التدريب -->
+<section class="pg p-train" aria-label="قسم التدريب وعرض التصاميم على العميل">
+  <img class="ph ph1" src="../assets/training-2.jpg" alt="قاعة عرض التصاميم">
+  <img class="ph ph2" src="../assets/training-1.jpg" alt="قاعة التدريب">
+  <div class="blk">
+    <div class="xd xd1"></div><div class="xd xd2"></div>
+    <p class="cap">قسم التدريب ... وعرض التصاميم على العميل</p>
+    <div class="embD"><img src="../assets/emblem-white.png" alt=""></div>
+  </div>
+  <img class="wm" src="../assets/wordmark-white.png" alt="Details decoration تفاصيل الديكور">
+  <span class="vt">Details تفاصيل</span>
+</section>
+
+<!-- ٥ الصالة -->
+<section class="pg p-hall" aria-label="صالة العرض">
+  <div class="g">
+    <img src="../assets/showroom-1.jpg" alt="مدخل المركز">
+    <img src="../assets/showroom-2.jpg" alt="صالة الاستقبال">
+    <img src="../assets/showroom-3.jpg" alt="الممر الداخلي">
+    <img src="../assets/showroom-4.jpg" alt="جلسات الانتظار">
+    <img src="../assets/showroom-5.jpg" alt="ركن الجلسات">
+    <img src="../assets/showroom-6.jpg" alt="ركن عرض التصاميم">
+  </div>
+  <div class="embD"><img src="../assets/emblem-white.png" alt="شعار تفاصيل الديكور"></div>
+</section>
+
+<!-- ٦ الواجهة -->
+<section class="pg p-face linepat" aria-label="واجهة المركز">
+  <div class="side">
+    <img class="abs emb" src="../assets/emblem-frame.jpg" alt="شعار تفاصيل الديكور">
+    <img class="abs wm" src="../assets/wordmark-dark.png" alt="Details decoration تفاصيل الديكور">
+    <img class="flow" src="../assets/flowers.jpg" alt="">
+  </div>
+  <img class="ph1" src="../assets/facade-night.jpg" alt="لوحة الواجهة المضيئة ليلاً">
+  <div class="dia dia1"></div>
+  <img class="ph2" src="../assets/storefront.jpg" alt="واجهة المركز ليلاً">
+</section>
+
+<!-- ٧ شركاء النجاح -->
+<section class="pg p-gov" aria-label="شركاء النجاح">
+  <div class="tiles">
+    <figure><img src="../assets/gov-1.jpg" alt="وزارة الصحة"></figure>
+    <figure><img src="../assets/gov-2.jpg" alt="إمارة منطقة تبوك"></figure>
+    <figure><img src="../assets/gov-3.jpg" alt="جامعة تبوك"></figure>
+    <figure><img src="../assets/gov-4.jpg" alt="مدارس الأمير فهد بن سلطان"></figure>
+    <figure><img src="../assets/gov-5.jpg" alt="أمانة منطقة تبوك"></figure>
+    <figure><img src="../assets/gov-6.jpg" alt="الخدمات الطبية للقوات المسلحة"></figure>
+    <figure><img src="../assets/gov-7.jpg" alt="مدرسة تبوك لتعليم قيادة المركبات"></figure>
+    <figure><img src="../assets/gov-8.jpg" alt="المجلس البلدي لأمانة منطقة تبوك"></figure>
+  </div>
+  <div class="panel">
+    <div class="embD"><img src="../assets/emblem-white.png" alt="شعار تفاصيل الديكور"></div>
+    <img class="wm" src="../assets/wordmark-white.png" alt="Details decoration تفاصيل الديكور">
+    <h2>شركاء النجاح</h2>
+  </div>
+</section>
+
+<!-- ٨ شركاء النجاح ٢ -->
+<section class="pg p-brands" aria-label="شركاء النجاح من العلامات التجارية">
+  <div class="grp g1">
+    <figure><img src="../assets/client-25.jpg" alt="Archirodon"></figure>
+    <figure><img src="../assets/client-26.jpg" alt="مدارس الملك عبدالعزيز النموذجية"></figure>
+    <figure><img src="../assets/client-27.jpg" alt="تبوك للاستثمار والسياحة"></figure>
+    <figure><img src="../assets/client-28.jpg" alt="القوات الجوية الملكية السعودية"></figure>
+    <figure><img src="../assets/client-29.jpg" alt="شاليهات هتان"></figure>
+    <figure><img src="../assets/client-30.jpg" alt="المكتب التعاوني للدعوة بتبوك"></figure>
+    <figure><img src="../assets/client-31.jpg" alt="80z Coffee"></figure>
+    <figure><img src="../assets/client-32.jpg" alt="Golden Tulip Sharma Resort"></figure>
+    <figure><img src="../assets/client-33.jpg" alt="مجمع استبرق لطب الأسنان"></figure>
+    <figure><img src="../assets/client-34.jpg" alt="Shiny Nails"></figure>
+    <figure><img src="../assets/client-35.jpg" alt="قصر المساج Spa Palace"></figure>
+    <figure><img src="../assets/client-36.jpg" alt="Hatchers"></figure>
+  </div>
+  <div class="grp g2">
+    <figure><img src="../assets/client-13.jpg" alt="Uncle Fluffy"></figure>
+    <figure><img src="../assets/client-14.jpg" alt="بسترو كافية"></figure>
+    <figure><img src="../assets/client-15.jpg" alt="علامة تجارية"></figure>
+    <figure><img src="../assets/client-16.jpg" alt="Sokoon Chocolate"></figure>
+    <figure><img src="../assets/client-17.jpg" alt="كلارد لايتس"></figure>
+    <figure><img src="../assets/client-18.jpg" alt="Rose Land"></figure>
+    <figure><img src="../assets/client-19.jpg" alt="Cup"></figure>
+    <figure><img src="../assets/client-20.jpg" alt="مجموعة البلوي للمحاماة"></figure>
+    <figure><img src="../assets/client-21.jpg" alt="One Gram Cafe"></figure>
+    <figure><img src="../assets/client-22.jpg" alt="180"></figure>
+    <figure><img src="../assets/client-23.jpg" alt="أركش"></figure>
+    <figure><img src="../assets/client-24.jpg" alt="Donutache"></figure>
+  </div>
+  <div class="grp g3">
+    <figure><img src="../assets/client-1.jpg" alt="علامة تجارية"></figure>
+    <figure><img src="../assets/client-2.jpg" alt="Natural Juice"></figure>
+    <figure><img src="../assets/client-3.jpg" alt="مدارس طلائع الغد"></figure>
+    <figure><img src="../assets/client-4.jpg" alt="مدارس رياض الصالحين"></figure>
+    <figure><img src="../assets/client-5.jpg" alt="الماسة تبوك للشقق الفندقية"></figure>
+    <figure><img src="../assets/client-6.jpg" alt="الجمعية العربية السعودية للثقافة والفنون"></figure>
+    <figure><img src="../assets/client-7.jpg" alt="الدفاع المدني"></figure>
+    <figure><img src="../assets/client-8.jpg" alt="Rowina Media Production"></figure>
+    <figure><img src="../assets/client-9.jpg" alt="درة القاضي الطبية"></figure>
+    <figure><img src="../assets/client-10.jpg" alt="Karak Shah"></figure>
+    <figure><img src="../assets/client-11.jpg" alt="مدارس تبوك النموذجية الأهلية"></figure>
+    <figure><img src="../assets/client-12.jpg" alt="قامات العقارية"></figure>
+  </div>
+  <div class="joint j1"><img src="../assets/emblem-white.png" alt=""></div>
+  <div class="joint j2"><img src="../assets/emblem-white.png" alt=""></div>
+  <div class="joint j3"><img src="../assets/emblem-white.png" alt=""></div>
+  <div class="joint j4"><img src="../assets/emblem-white.png" alt=""></div>
+</section>
+
+</body>
+</html>
