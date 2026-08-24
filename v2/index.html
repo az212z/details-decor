@@ -6,12 +6,16 @@
 <title>تفاصيل الديكور | الملف التعريفي</title>
 <meta name="description" content="الملف التعريفي لمركز تفاصيل الديكور في تبوك، بتصميم صفحات الملف نفسها.">
 <meta property="og:title" content="تفاصيل الديكور | الملف التعريفي">
-<meta property="og:image" content="../assets/pages/page-1.jpg">
+<meta property="og:image" content="https://az212z.github.io/details-decor/assets/pages/page-1.jpg">
+<link rel="canonical" href="https://az212z.github.io/details-decor/v2/">
 <meta name="theme-color" content="#0d0d0f">
 <link rel="icon" href="../assets/emblem-black.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HomeGoodsStore","name":"تفاصيل الديكور","alternateName":"Details decoration","description":"مركز الديكور الداخلي والفنون في تبوك: تصميم وتنفيذ وإشراف واستشارات ومعارض وتدريب.","telephone":"+966590599060","url":"https://decorationdetails.com","address":{"@type":"PostalAddress","streetAddress":"شارع خالد بن الوليد، حي المصيف","addressLocality":"تبوك","postalCode":"47321","addressCountry":"SA"},"openingHours":"Mo-Su 17:00-22:30","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"420","bestRating":"5"},"image":"https://az212z.github.io/details-decor/assets/pages/page-6.jpg","sameAs":["https://www.instagram.com/decorationdetails.s/","https://www.instagram.com/detailsart.sa/","https://www.tiktok.com/@decoration_details","https://www.snapchat.com/add/decor.details","https://linktr.ee/Details.decoration"]}
+</script>
 <style>
 :root{
   --ink:#0d0d0f;--paperw:#fbfaf7;--grey:#dcd9d3;--grey2:#cfccc5;
@@ -204,12 +208,13 @@ footer .end{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;m
 .wa-fab:hover{transform:translateY(-3px)}
 .wa-fab svg{width:26px;height:26px;fill:#fff}
 .en{direction:ltr;unicode-bidi:isolate}
+a:focus-visible,button:focus-visible{outline:2px solid var(--lav2);outline-offset:3px}
 @media (max-width:900px){nav ul{display:none}footer .lgrid{grid-template-columns:1fr 1fr}}
 @media (max-width:640px){footer .lgrid{grid-template-columns:1fr}#cover{min-height:64svh}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.pg.fade{opacity:1}}
 
 /* ===== pro upgrades ===== */
-@media (min-width:701px){
+@media (min-width:861px){
   html{scroll-snap-type:y proximity}
   .pg{scroll-snap-align:start}
 }
@@ -230,7 +235,7 @@ dialog.lb::backdrop{background:rgba(8,8,10,.93);backdrop-filter:blur(10px)}
 dialog.lb img{max-height:86vh;max-width:96vw;width:auto;border:6px solid #fff}
 dialog.lb button{position:absolute;top:-.4rem;right:-.4rem;width:42px;height:42px;border:0;background:#fff;cursor:pointer;font-size:1rem}
 /* ===== mobile reflow: نفس التصميم، تدفق مقروء ===== */
-@media (max-width:700px){
+@media (max-width:860px){
   .pg{aspect-ratio:auto;container-type:normal}
   .pg .no{display:none}
   .wmk,.xr,.xg{display:none}
@@ -256,7 +261,7 @@ dialog.lb button{position:absolute;top:-.4rem;right:-.4rem;width:42px;height:42p
   .p-daman .n12{font-size:3rem}
   .p-daman .par{width:100%;max-width:32rem;font-size:.95rem}
   .p-daman .emb{width:150px;margin-top:1rem}
-  .p-daman .wm{width:170px;filter:none;margin-bottom:.6rem}
+  .p-daman .wm{width:170px;filter:none;margin-bottom:.6rem;content:url("../assets/wordmark-dark.png")}
   .p-daman .big{font-size:2.6rem}
   .p-daman .sub{font-size:1.2rem}
   .p-daman .sub2{width:100%;max-width:32rem;font-size:.95rem}
@@ -331,8 +336,8 @@ dialog.lb button{position:absolute;top:-.4rem;right:-.4rem;width:42px;height:42p
 </nav>
 
 <header id="cover">
-  <div class="box"><img src="../assets/emblem-white.png" alt="شعار تفاصيل الديكور"></div>
-  <img class="wmc" src="../assets/wordmark-white.png" alt="Details decoration تفاصيل الديكور">
+  <div class="box"><img fetchpriority="high" decoding="async" src="../assets/emblem-white.png" alt="شعار تفاصيل الديكور"></div>
+  <img loading="lazy" decoding="async" class="wmc" src="../assets/wordmark-white.png" alt="Details decoration تفاصيل الديكور">
   <h1>حينما تلتقي عراقة التصميم وهوية التاريخ وسط بيت الطين</h1>
   <small>الملف التعريفي · مركز الديكور الداخلي والفنون · تبوك</small>
   <div class="btns">
@@ -343,11 +348,11 @@ dialog.lb button{position:absolute;top:-.4rem;right:-.4rem;width:42px;height:42p
 
 <!-- ١ قصة تفاصيل -->
 <section id="p1" class="pg fade p-story linepat" aria-label="تبدأ تفاصيل القصة">
-  <img class="abs flow2" src="../assets/flowers-2.jpg" alt="">
-  <img class="abs flow1" src="../assets/flowers.jpg" alt="">
+  <img loading="lazy" decoding="async" class="abs flow2" src="../assets/flowers-2.jpg" alt="">
+  <img loading="lazy" decoding="async" class="abs flow1" src="../assets/flowers.jpg" alt="">
   <div class="xr xr1"></div><div class="xr xr2"></div>
-  <img class="abs emb" src="../assets/emblem-frame.jpg" alt="شعار تفاصيل الديكور">
-  <img class="abs wm" src="../assets/wordmark-dark.png" alt="Details decoration تفاصيل الديكور">
+  <img loading="lazy" decoding="async" class="abs emb" src="../assets/emblem-frame.jpg" alt="شعار تفاصيل الديكور">
+  <img loading="lazy" decoding="async" class="abs wm" src="../assets/wordmark-dark.png" alt="Details decoration تفاصيل الديكور">
   <h2 class="abs t1">حينما تلتقي ...<br>عراقة التصميم<small>الفن الاسلامي</small></h2>
   <div class="abs waw">و</div>
   <h2 class="abs t2">هوية التاريخ<small>زهرة الخزامى</small></h2>
@@ -365,10 +370,10 @@ dialog.lb button{position:absolute;top:-.4rem;right:-.4rem;width:42px;height:42p
 <!-- ٢ الضمان -->
 <section id="p2" class="pg fade p-daman linepat" aria-label="الضمان">
   <div class="xg xg1 abs"></div><div class="xg xg2 abs"></div>
-  <img class="wmk wmk1" src="../assets/wordmark-dark.png" alt="">
-  <img class="wmk wmk2" src="../assets/wordmark-dark.png" alt="">
-  <img class="abs emb" src="../assets/emblem-frame.jpg" alt="شعار تفاصيل الديكور">
-  <img class="abs wm" src="../assets/wordmark-white.png" alt="Details decoration تفاصيل الديكور">
+  <img loading="lazy" decoding="async" class="wmk wmk1" src="../assets/wordmark-dark.png" alt="">
+  <img loading="lazy" decoding="async" class="wmk wmk2" src="../assets/wordmark-dark.png" alt="">
+  <img loading="lazy" decoding="async" class="abs emb" src="../assets/emblem-frame.jpg" alt="شعار تفاصيل الديكور">
+  <img loading="lazy" decoding="async" class="abs wm" src="../assets/wordmark-white.png" alt="Details decoration تفاصيل الديكور">
   <h2 class="abs t1">تشرفنا بخدمة أكثر</h2>
   <div class="abs n12"><span class="en">12.000</span> <small>عميل</small></div>
   <p class="abs par">ولله الحمد لم تقدم أي دعوة ضد المؤسسة للجهات المعنية وتقييم العملاء مميز<br>نطاق المؤسسة مرتفع بشكل مستمر ويوجد ثناء من الجهات ذات العلاقة</p>
@@ -380,8 +385,8 @@ dialog.lb button{position:absolute;top:-.4rem;right:-.4rem;width:42px;height:42p
 
 <!-- ٣ خدماتنا -->
 <section id="p3" class="pg fade p-serv linepat" aria-label="خدماتنا">
-  <img class="wmk wmk1" src="../assets/wordmark-dark.png" alt="">
-  <img class="wmk wmk2" src="../assets/wordmark-dark.png" alt="">
+  <img loading="lazy" decoding="async" class="wmk wmk1" src="../assets/wordmark-dark.png" alt="">
+  <img loading="lazy" decoding="async" class="wmk wmk2" src="../assets/wordmark-dark.png" alt="">
   <h2 class="abs t1">خدماتنا ..</h2>
   <ol>
     <li><span>تصميم الديكور الداخلي والخارجي عن طريق برامج الثري دي</span></li>
@@ -394,8 +399,8 @@ dialog.lb button{position:absolute;top:-.4rem;right:-.4rem;width:42px;height:42p
     <li><span>تصميم الهوية الإعلانية للشركات والمؤسسات</span></li>
     <li><span>تنظيم الاحتفالات والمناسبات الرسمية</span></li>
   </ol>
-  <img class="abs emb" src="../assets/emblem-frame.jpg" alt="شعار تفاصيل الديكور">
-  <img class="abs wm" src="../assets/wordmark-dark.png" alt="Details decoration تفاصيل الديكور">
+  <img loading="lazy" decoding="async" class="abs emb" src="../assets/emblem-frame.jpg" alt="شعار تفاصيل الديكور">
+  <img loading="lazy" decoding="async" class="abs wm" src="../assets/wordmark-dark.png" alt="Details decoration تفاصيل الديكور">
   <h3 class="abs t2">التدريب على التصميم والديكور الداخلي</h3>
   <p class="abs t3">وكان آخرها تدريب الدفعة الأولى<br>من خريجات قسم التصميم بجامعة تبوك</p>
   <div class="no en" aria-hidden="true">٠٣ / ٠٨</div>
@@ -403,14 +408,14 @@ dialog.lb button{position:absolute;top:-.4rem;right:-.4rem;width:42px;height:42p
 
 <!-- ٤ قسم التدريب -->
 <section id="p4" class="pg fade p-train" aria-label="قسم التدريب وعرض التصاميم على العميل">
-  <img class="ph ph1" src="../assets/training-2.jpg" alt="قاعة عرض التصاميم">
-  <img class="ph ph2" src="../assets/training-1.jpg" alt="قاعة التدريب">
+  <img loading="lazy" decoding="async" class="ph ph1" src="../assets/training-2.jpg" alt="قاعة عرض التصاميم">
+  <img loading="lazy" decoding="async" class="ph ph2" src="../assets/training-1.jpg" alt="قاعة التدريب">
   <div class="blk">
     <div class="xd xd1"></div><div class="xd xd2"></div>
     <p class="cap">قسم التدريب ... وعرض التصاميم على العميل</p>
-    <div class="embD"><img src="../assets/emblem-white.png" alt=""></div>
+    <div class="embD"><img loading="lazy" decoding="async" src="../assets/emblem-white.png" alt=""></div>
   </div>
-  <img class="wm" src="../assets/wordmark-white.png" alt="Details decoration تفاصيل الديكور">
+  <img loading="lazy" decoding="async" class="wm" src="../assets/wordmark-white.png" alt="Details decoration تفاصيل الديكور">
   <span class="vt">Details تفاصيل</span>
   <div class="no en" aria-hidden="true">٠٤ / ٠٨</div>
 </section>
@@ -418,45 +423,45 @@ dialog.lb button{position:absolute;top:-.4rem;right:-.4rem;width:42px;height:42p
 <!-- ٥ الصالة -->
 <section id="p5" class="pg fade p-hall" aria-label="صالة العرض">
   <div class="g">
-    <img src="../assets/showroom-1.jpg" alt="مدخل المركز">
-    <img src="../assets/showroom-2.jpg" alt="صالة الاستقبال">
-    <img src="../assets/showroom-3.jpg" alt="الممر الداخلي">
-    <img src="../assets/showroom-4.jpg" alt="جلسات الانتظار">
-    <img src="../assets/showroom-5.jpg" alt="ركن الجلسات">
-    <img src="../assets/showroom-6.jpg" alt="ركن عرض التصاميم">
+    <img loading="lazy" decoding="async" src="../assets/showroom-1.jpg" alt="مدخل المركز">
+    <img loading="lazy" decoding="async" src="../assets/showroom-2.jpg" alt="صالة الاستقبال">
+    <img loading="lazy" decoding="async" src="../assets/showroom-3.jpg" alt="الممر الداخلي">
+    <img loading="lazy" decoding="async" src="../assets/showroom-4.jpg" alt="جلسات الانتظار">
+    <img loading="lazy" decoding="async" src="../assets/showroom-5.jpg" alt="ركن الجلسات">
+    <img loading="lazy" decoding="async" src="../assets/showroom-6.jpg" alt="ركن عرض التصاميم">
   </div>
-  <div class="embD"><img src="../assets/emblem-white.png" alt="شعار تفاصيل الديكور"></div>
+  <div class="embD"><img loading="lazy" decoding="async" src="../assets/emblem-white.png" alt="شعار تفاصيل الديكور"></div>
   <div class="no en" aria-hidden="true">٠٥ / ٠٨</div>
 </section>
 
 <!-- ٦ الواجهة -->
 <section id="p6" class="pg fade p-face linepat" aria-label="واجهة المركز">
   <div class="side">
-    <img class="abs emb" src="../assets/emblem-frame.jpg" alt="شعار تفاصيل الديكور">
-    <img class="abs wm" src="../assets/wordmark-dark.png" alt="Details decoration تفاصيل الديكور">
-    <img class="flow" src="../assets/flowers.jpg" alt="">
+    <img loading="lazy" decoding="async" class="abs emb" src="../assets/emblem-frame.jpg" alt="شعار تفاصيل الديكور">
+    <img loading="lazy" decoding="async" class="abs wm" src="../assets/wordmark-dark.png" alt="Details decoration تفاصيل الديكور">
+    <img loading="lazy" decoding="async" class="flow" src="../assets/flowers.jpg" alt="">
   </div>
-  <img class="ph1" src="../assets/facade-night.jpg" alt="لوحة الواجهة المضيئة ليلاً">
+  <img loading="lazy" decoding="async" class="ph1" src="../assets/facade-night.jpg" alt="لوحة الواجهة المضيئة ليلاً">
   <div class="dia dia1"></div>
-  <img class="ph2" src="../assets/storefront.jpg" alt="واجهة المركز ليلاً">
+  <img loading="lazy" decoding="async" class="ph2" src="../assets/storefront.jpg" alt="واجهة المركز ليلاً">
   <div class="no en" aria-hidden="true">٠٦ / ٠٨</div>
 </section>
 
 <!-- ٧ شركاء النجاح -->
 <section id="p7" class="pg fade p-gov" aria-label="شركاء النجاح">
   <div class="tiles">
-    <figure><img src="../assets/gov-1.jpg" alt="وزارة الصحة"></figure>
-    <figure><img src="../assets/gov-2.jpg" alt="إمارة منطقة تبوك"></figure>
-    <figure><img src="../assets/gov-3.jpg" alt="جامعة تبوك"></figure>
-    <figure><img src="../assets/gov-4.jpg" alt="مدارس الأمير فهد بن سلطان"></figure>
-    <figure><img src="../assets/gov-5.jpg" alt="أمانة منطقة تبوك"></figure>
-    <figure><img src="../assets/gov-6.jpg" alt="الخدمات الطبية للقوات المسلحة"></figure>
-    <figure><img src="../assets/gov-7.jpg" alt="مدرسة تبوك لتعليم قيادة المركبات"></figure>
-    <figure><img src="../assets/gov-8.jpg" alt="المجلس البلدي لأمانة منطقة تبوك"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/gov-1.jpg" alt="وزارة الصحة"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/gov-2.jpg" alt="إمارة منطقة تبوك"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/gov-3.jpg" alt="جامعة تبوك"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/gov-4.jpg" alt="مدارس الأمير فهد بن سلطان"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/gov-5.jpg" alt="أمانة منطقة تبوك"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/gov-6.jpg" alt="الخدمات الطبية للقوات المسلحة"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/gov-7.jpg" alt="مدرسة تبوك لتعليم قيادة المركبات"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/gov-8.jpg" alt="المجلس البلدي لأمانة منطقة تبوك"></figure>
   </div>
   <div class="panel">
-    <div class="embD"><img src="../assets/emblem-white.png" alt="شعار تفاصيل الديكور"></div>
-    <img class="wm" src="../assets/wordmark-white.png" alt="Details decoration تفاصيل الديكور">
+    <div class="embD"><img loading="lazy" decoding="async" src="../assets/emblem-white.png" alt="شعار تفاصيل الديكور"></div>
+    <img loading="lazy" decoding="async" class="wm" src="../assets/wordmark-white.png" alt="Details decoration تفاصيل الديكور">
     <h2>شركاء النجاح</h2>
   </div>
   <div class="no en" aria-hidden="true">٠٧ / ٠٨</div>
@@ -465,51 +470,51 @@ dialog.lb button{position:absolute;top:-.4rem;right:-.4rem;width:42px;height:42p
 <!-- ٨ شركاء النجاح ٢ -->
 <section id="p8" class="pg fade p-brands" aria-label="شركاء النجاح من العلامات التجارية">
   <div class="grp g1">
-    <figure><img src="../assets/client-25.jpg" alt="Archirodon"></figure>
-    <figure><img src="../assets/client-26.jpg" alt="مدارس الملك عبدالعزيز النموذجية"></figure>
-    <figure><img src="../assets/client-27.jpg" alt="تبوك للاستثمار والسياحة"></figure>
-    <figure><img src="../assets/client-28.jpg" alt="القوات الجوية الملكية السعودية"></figure>
-    <figure><img src="../assets/client-29.jpg" alt="شاليهات هتان"></figure>
-    <figure><img src="../assets/client-30.jpg" alt="المكتب التعاوني للدعوة بتبوك"></figure>
-    <figure><img src="../assets/client-31.jpg" alt="80z Coffee"></figure>
-    <figure><img src="../assets/client-32.jpg" alt="Golden Tulip Sharma Resort"></figure>
-    <figure><img src="../assets/client-33.jpg" alt="مجمع استبرق لطب الأسنان"></figure>
-    <figure><img src="../assets/client-34.jpg" alt="Shiny Nails"></figure>
-    <figure><img src="../assets/client-35.jpg" alt="قصر المساج Spa Palace"></figure>
-    <figure><img src="../assets/client-36.jpg" alt="Hatchers"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-25.jpg" alt="Archirodon"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-26.jpg" alt="مدارس الملك عبدالعزيز النموذجية"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-27.jpg" alt="تبوك للاستثمار والسياحة"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-28.jpg" alt="القوات الجوية الملكية السعودية"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-29.jpg" alt="شاليهات هتان"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-30.jpg" alt="المكتب التعاوني للدعوة بتبوك"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-31.jpg" alt="80z Coffee"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-32.jpg" alt="Golden Tulip Sharma Resort"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-33.jpg" alt="مجمع استبرق لطب الأسنان"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-34.jpg" alt="Shiny Nails"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-35.jpg" alt="قصر المساج Spa Palace"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-36.jpg" alt="Hatchers"></figure>
   </div>
   <div class="grp g2">
-    <figure><img src="../assets/client-13.jpg" alt="Uncle Fluffy"></figure>
-    <figure><img src="../assets/client-14.jpg" alt="بسترو كافية"></figure>
-    <figure><img src="../assets/client-15.jpg" alt="علامة تجارية"></figure>
-    <figure><img src="../assets/client-16.jpg" alt="Sokoon Chocolate"></figure>
-    <figure><img src="../assets/client-17.jpg" alt="كلارد لايتس"></figure>
-    <figure><img src="../assets/client-18.jpg" alt="Rose Land"></figure>
-    <figure><img src="../assets/client-19.jpg" alt="Cup"></figure>
-    <figure><img src="../assets/client-20.jpg" alt="مجموعة البلوي للمحاماة"></figure>
-    <figure><img src="../assets/client-21.jpg" alt="One Gram Cafe"></figure>
-    <figure><img src="../assets/client-22.jpg" alt="180"></figure>
-    <figure><img src="../assets/client-23.jpg" alt="أركش"></figure>
-    <figure><img src="../assets/client-24.jpg" alt="Donutache"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-13.jpg" alt="Uncle Fluffy"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-14.jpg" alt="بسترو كافية"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-15.jpg" alt="علامة تجارية"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-16.jpg" alt="Sokoon Chocolate"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-17.jpg" alt="كلارد لايتس"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-18.jpg" alt="Rose Land"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-19.jpg" alt="Cup"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-20.jpg" alt="مجموعة البلوي للمحاماة"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-21.jpg" alt="One Gram Cafe"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-22.jpg" alt="180"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-23.jpg" alt="أركش"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-24.jpg" alt="Donutache"></figure>
   </div>
   <div class="grp g3">
-    <figure><img src="../assets/client-1.jpg" alt="علامة تجارية"></figure>
-    <figure><img src="../assets/client-2.jpg" alt="Natural Juice"></figure>
-    <figure><img src="../assets/client-3.jpg" alt="مدارس طلائع الغد"></figure>
-    <figure><img src="../assets/client-4.jpg" alt="مدارس رياض الصالحين"></figure>
-    <figure><img src="../assets/client-5.jpg" alt="الماسة تبوك للشقق الفندقية"></figure>
-    <figure><img src="../assets/client-6.jpg" alt="الجمعية العربية السعودية للثقافة والفنون"></figure>
-    <figure><img src="../assets/client-7.jpg" alt="الدفاع المدني"></figure>
-    <figure><img src="../assets/client-8.jpg" alt="Rowina Media Production"></figure>
-    <figure><img src="../assets/client-9.jpg" alt="درة القاضي الطبية"></figure>
-    <figure><img src="../assets/client-10.jpg" alt="Karak Shah"></figure>
-    <figure><img src="../assets/client-11.jpg" alt="مدارس تبوك النموذجية الأهلية"></figure>
-    <figure><img src="../assets/client-12.jpg" alt="قامات العقارية"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-1.jpg" alt="علامة تجارية"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-2.jpg" alt="Natural Juice"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-3.jpg" alt="مدارس طلائع الغد"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-4.jpg" alt="مدارس رياض الصالحين"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-5.jpg" alt="الماسة تبوك للشقق الفندقية"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-6.jpg" alt="الجمعية العربية السعودية للثقافة والفنون"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-7.jpg" alt="الدفاع المدني"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-8.jpg" alt="Rowina Media Production"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-9.jpg" alt="درة القاضي الطبية"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-10.jpg" alt="Karak Shah"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-11.jpg" alt="مدارس تبوك النموذجية الأهلية"></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/client-12.jpg" alt="قامات العقارية"></figure>
   </div>
-  <div class="joint j1"><img src="../assets/emblem-white.png" alt=""></div>
-  <div class="joint j2"><img src="../assets/emblem-white.png" alt=""></div>
-  <div class="joint j3"><img src="../assets/emblem-white.png" alt=""></div>
-  <div class="joint j4"><img src="../assets/emblem-white.png" alt=""></div>
+  <div class="joint j1"><img loading="lazy" decoding="async" src="../assets/emblem-white.png" alt=""></div>
+  <div class="joint j2"><img loading="lazy" decoding="async" src="../assets/emblem-white.png" alt=""></div>
+  <div class="joint j3"><img loading="lazy" decoding="async" src="../assets/emblem-white.png" alt=""></div>
+  <div class="joint j4"><img loading="lazy" decoding="async" src="../assets/emblem-white.png" alt=""></div>
   <div class="no en" aria-hidden="true">٠٨ / ٠٨</div>
 </section>
 
@@ -528,7 +533,7 @@ dialog.lb button{position:absolute;top:-.4rem;right:-.4rem;width:42px;height:42p
   </div>
 </footer>
 
-<dialog class="lb" id="lb"><figure style="margin:0;position:relative"><button id="lbx" aria-label="إغلاق">✕</button><img id="lbimg" src="" alt=""></figure></dialog>
+<dialog class="lb" id="lb" aria-label="عرض الصورة"><figure style="margin:0;position:relative"><button id="lbx" aria-label="إغلاق">✕</button><img loading="lazy" decoding="async" id="lbimg" src="" alt=""></figure></dialog>
 
 <a class="wa-fab" href="https://wa.me/966558113005" target="_blank" rel="noopener" aria-label="واتساب"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-1 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2z"/></svg></a>
 
