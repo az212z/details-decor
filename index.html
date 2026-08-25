@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>تفاصيل الديكور | Details decoration — تبوك</title>
-<meta name="description" content="تفاصيل الديكور، تبوك: مركز الديكور الداخلي والفنون. تصميم وتنفيذ الديكور الداخلي والخارجي، لوحات فنية، معارض، استشارات، وتدريب. خدمنا أكثر من ١٢٬٠٠٠ عميل — تقييم ٤٫٨ على Google.">
+<title>تفاصيل الديكور | Details decoration · تبوك</title>
+<meta name="description" content="تفاصيل الديكور، تبوك: مركز الديكور الداخلي والفنون. تصميم وتنفيذ الديكور الداخلي والخارجي، لوحات فنية، معارض، استشارات، وتدريب. خدمنا أكثر من ١٢٬٠٠٠ عميل، تقييم ٤٫٨ على Google.">
 <meta name="theme-color" content="#0b0b0c">
 <meta property="og:type" content="business.business">
 <meta property="og:title" content="تفاصيل الديكور | Details decoration">
-<meta property="og:description" content="حينما تلتقي عراقة التصميم وهُوية التاريخ — مركز الديكور الداخلي والفنون في تبوك.">
+<meta property="og:description" content="حينما تلتقي عراقة التصميم وهوية التاريخ. مركز الديكور الداخلي والفنون في تبوك.">
 <meta property="og:image" content="assets/facade-night.jpg">
 <link rel="icon" href="assets/emblem-black.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,7 +44,7 @@ section{scroll-margin-top:64px}
 
 /* section heading */
 .eyebrow{font-family:var(--kufi);font-weight:700;font-size:.9rem;letter-spacing:normal;color:var(--lav)}
-.h-sec{font-size:clamp(1.7rem,4.4vw,2.9rem);margin:.5rem 0 .3rem}
+.h-sec{font-size:clamp(1.6rem,4vw,2.6rem);margin:.5rem 0 .3rem}
 .rule{width:52px;height:2px;background:var(--gold);margin:1rem auto 0}
 .center{text-align:center}
 .lead{color:var(--graphite);max-width:60ch;margin-inline:auto;font-size:1.02rem}
@@ -103,7 +103,7 @@ nav .navcta:hover{background:#fff;color:var(--ink);border-color:#fff}
 #story{background:var(--paper)}
 #story .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
 #story .txt .eyebrow{color:var(--lav)}
-#story h2{font-size:clamp(1.7rem,4vw,2.7rem);margin:.5rem 0 1.1rem}
+#story h2{font-size:clamp(1.6rem,4vw,2.6rem);margin:.5rem 0 1.1rem}
 #story .intro{color:var(--graphite);font-size:1.06rem;margin-bottom:1.8rem}
 .clr{display:flex;gap:1rem;align-items:flex-start;padding:.9rem 0;border-top:1px solid var(--line)}
 .clr .sw{flex:0 0 auto;width:40px;height:40px;border-radius:3px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.06);margin-top:.3rem}
@@ -136,7 +136,7 @@ nav .navcta:hover{background:#fff;color:var(--ink);border-color:#fff}
 #train{background:var(--ink2);color:#fff}
 #train .grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(2rem,4vw,3.5rem);align-items:center}
 #train .eyebrow{color:var(--lav2)}
-#train h2{font-size:clamp(1.6rem,4vw,2.6rem);margin:.5rem 0 1.1rem;color:#fff}
+#train h2{font-size:clamp(1.6rem,4vw,2.6rem);margin:.5rem 0 1.1rem;color:#fff;line-height:1.55}
 #train p{color:#c7c3bb;font-size:1.04rem;margin-bottom:1.3rem}
 #train .note{display:flex;gap:.9rem;align-items:flex-start;background:rgba(141,116,196,.12);border:1px solid rgba(141,116,196,.3);border-radius:4px;padding:1.1rem 1.2rem;color:#e6e2ec;font-size:.98rem}
 #train .note .st{flex:0 0 auto;width:34px;height:34px;color:var(--lav2)}
@@ -202,7 +202,8 @@ footer .cp{font-size:.8rem;opacity:.6;line-height:1.9}
 footer .cp .en{color:#a29eaa}
 
 /* FLOAT WA */
-.wa{position:fixed;inset-block-end:18px;inset-inline-start:18px;z-index:80;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 26px -8px rgba(37,211,102,.6);transition:transform .3s}
+.wa{position:fixed;inset-block-end:18px;inset-inline-start:18px;z-index:80;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 26px -8px rgba(37,211,102,.6);transition:transform .3s,opacity .35s,visibility .35s}
+.wa.hide{opacity:0;visibility:hidden;pointer-events:none}
 .wa:hover{transform:scale(1.08)}
 .wa svg{width:30px;height:30px;fill:#fff}
 
@@ -255,13 +256,13 @@ footer .cp .en{color:#a29eaa}
 
 <!-- HERO -->
 <header id="hero">
-  <div class="bg"><img src="assets/facade-night.jpg" alt="واجهة مركز تفاصيل الديكور ليلًا في تبوك" fetchpriority="high"></div>
+  <div class="bg"><img src="assets/facade-night.jpg" alt="واجهة مركز تفاصيل الديكور ليلا في تبوك" fetchpriority="high"></div>
   <div class="wrap">
     <div class="emb"><svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M50 4 61 24 84 16 76 39 96 50 76 61 84 84 61 76 50 96 39 76 16 84 24 61 4 50 24 39 16 16 39 24Z"/><path fill="none" stroke="currentColor" stroke-width="1" d="M50 20 57 34 72 30 66 44 80 50 66 56 72 70 57 66 50 80 43 66 28 70 34 56 20 50 34 44 28 30 43 34Z"/></svg></div>
     <img class="wm" src="assets/wordmark-white.png" alt="تفاصيل الديكور Details decoration">
     <div class="kick">مركز الديكور الداخلي والفنون · تبوك</div>
-    <h1>حينما تلتقي عراقةُ التصميم وهُويةُ التاريخ</h1>
-    <p>تصميمٌ وتنفيذٌ للديكور الداخلي والخارجي، لوحاتٌ فنية، معارض، واستشارات — بخبرةٍ خدمت أكثر من <span class="num">١٢٬٠٠٠</span> عميل.</p>
+    <h1>حينما تلتقي عراقة التصميم وهوية التاريخ</h1>
+    <p>تصميم وتنفيذ للديكور الداخلي والخارجي، لوحات فنية، معارض، واستشارات، بخبرة خدمت أكثر من <span class="num">١٢٬٠٠٠</span> عميل.</p>
     <div class="ctas">
       <a class="btn lav" href="https://wa.me/966558113005?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D8%AF%D9%8A%D9%83%D9%88%D8%B1" target="_blank" rel="noopener">تواصل عبر واتساب</a>
       <a class="btn ghost" href="https://linktr.ee/Details.decoration" target="_blank" rel="noopener">كل روابطنا</a>
@@ -276,10 +277,10 @@ footer .cp .en{color:#a29eaa}
   <div class="wrap grid">
     <div class="txt">
       <div class="eyebrow">تبدأ تفاصيل القصة</div>
-      <h2>قصةٌ متفرّدة، وسط بيت الطير</h2>
-      <p class="intro">وُلدت «تفاصيل» من عبَقٍ إسلاميٍّ أصيل ولغةٍ بصريةٍ تجمع عراقةَ التصميم بهُوية التاريخ. ومن هذا المزيج انبثقت لوحتُنا اللونية.</p>
-        <div class="clr reveal" style="--d:0ms"><span class="sw" style="background:linear-gradient(135deg,#9b82cf,#6f55a3)"></span><div><h4>اللون الخزامي</h4><p>حضورٌ يجمع الاعتدال بالرقيّ، ويبعث البهجة والشغف والدفء والحكمة.</p></div></div>
-        <div class="clr reveal" style="--d:90ms"><span class="sw" style="background:linear-gradient(135deg,#d8c288,#b79a5b)"></span><div><h4>اللون الذهبي</h4><p>يحمل قاعدة التوازن، ويمزج بين السماء والأرض في لمسةٍ راقية.</p></div></div>
+      <h2>قصة متفردة، وسط بيت الطير</h2>
+      <p class="intro">ولدت «تفاصيل» من عبق إسلامي أصيل ولغة بصرية تجمع عراقة التصميم بهوية التاريخ. ومن هذا المزيج انبثقت لوحتنا اللونية.</p>
+        <div class="clr reveal" style="--d:0ms"><span class="sw" style="background:linear-gradient(135deg,#9b82cf,#6f55a3)"></span><div><h4>اللون الخزامي</h4><p>حضور يجمع الاعتدال بالرقي، ويبعث البهجة والشغف والدفء والحكمة.</p></div></div>
+        <div class="clr reveal" style="--d:90ms"><span class="sw" style="background:linear-gradient(135deg,#d8c288,#b79a5b)"></span><div><h4>اللون الذهبي</h4><p>يحمل قاعدة التوازن، ويمزج بين السماء والأرض في لمسة راقية.</p></div></div>
     </div>
     <div class="fig">
       <img src="assets/flowers.jpg" alt="لوحة ألوان تفاصيل: الخزامي والذهبي">
@@ -292,7 +293,7 @@ footer .cp .en{color:#a29eaa}
 <section id="work">
   <div class="wrap center">
     <div class="eyebrow">من داخل المركز</div>
-    <h2 class="h-sec">أعمالٌ وتفاصيلُ تُروى بالمكان</h2>
+    <h2 class="h-sec">أعمال وتفاصيل تروى بالمكان</h2>
     <div class="rule"></div>
   </div>
   <div class="wrap">
@@ -311,19 +312,19 @@ footer .cp .en{color:#a29eaa}
 <section id="services">
   <div class="wrap center">
     <div class="eyebrow">خدماتنا</div>
-    <h2 class="h-sec">كلُّ ما يحتاجه مكانك، في مكانٍ واحد</h2>
+    <h2 class="h-sec">كل ما يحتاجه مكانك، في مكان واحد</h2>
     <div class="rule"></div>
-    <p class="lead">من الفكرة ثلاثية الأبعاد حتى التسليم والإشراف — منظومةٌ متكاملة للديكور الداخلي والفنون.</p>
+    <p class="lead">من الفكرة ثلاثية الأبعاد حتى التسليم والإشراف: منظومة متكاملة للديكور الداخلي والفنون.</p>
   </div>
   <div class="wrap">
     <div class="svcs">
-      <article class="svc reveal" style="--d:0ms"><span class="svc-n num">٠١</span><h3>تصميم الديكور الداخلي والخارجي</h3><p>عبر برامج التصميم ثلاثية الأبعاد (3D) لتَرَى مكانك قبل التنفيذ.</p></article>
-      <article class="svc reveal" style="--d:70ms"><span class="svc-n num">٠٢</span><h3>تنفيذ أعمال الديكور الداخلي</h3><p>تنفيذٌ كاملٌ باحترافية وإتقانٍ للتفاصيل.</p></article>
-      <article class="svc reveal" style="--d:140ms"><span class="svc-n num">٠٣</span><h3>الإشراف على التنفيذ</h3><p>متابعةٌ ميدانية تضمن مطابقة العمل للتصميم.</p></article>
-      <article class="svc reveal" style="--d:0ms"><span class="svc-n num">٠٤</span><h3>تنسيق المكان — مجانًا</h3><p>خدمةُ تنسيقٍ مجانية نُقدّمها لعملائنا.</p></article>
-      <article class="svc reveal" style="--d:70ms"><span class="svc-n num">٠٥</span><h3>الاستشارات المتخصصة</h3><p>استشاراتٌ في الديكور الداخلي وحلول المساحات.</p></article>
+      <article class="svc reveal" style="--d:0ms"><span class="svc-n num">٠١</span><h3>تصميم الديكور الداخلي والخارجي</h3><p>عبر برامج التصميم ثلاثية الأبعاد (3D) لترى مكانك قبل التنفيذ.</p></article>
+      <article class="svc reveal" style="--d:70ms"><span class="svc-n num">٠٢</span><h3>تنفيذ أعمال الديكور الداخلي</h3><p>تنفيذ كامل باحترافية وإتقان للتفاصيل.</p></article>
+      <article class="svc reveal" style="--d:140ms"><span class="svc-n num">٠٣</span><h3>الإشراف على التنفيذ</h3><p>متابعة ميدانية تضمن مطابقة العمل للتصميم.</p></article>
+      <article class="svc reveal" style="--d:0ms"><span class="svc-n num">٠٤</span><h3>تنسيق المكان مجانا</h3><p>خدمة تنسيق مجانية نقدمها لعملائنا.</p></article>
+      <article class="svc reveal" style="--d:70ms"><span class="svc-n num">٠٥</span><h3>الاستشارات المتخصصة</h3><p>استشارات في الديكور الداخلي وحلول المساحات.</p></article>
       <article class="svc reveal" style="--d:140ms"><span class="svc-n num">٠٦</span><h3>إقامة المعارض</h3><p>معارض متخصصة في الديكور الداخلي والتصميم والفنون.</p></article>
-      <article class="svc reveal" style="--d:0ms"><span class="svc-n num">٠٧</span><h3>اللوحات الفنية وورق الحائط</h3><p>تصميمٌ وطباعةٌ للّوحات الفنية وأوراق الجدران.</p></article>
+      <article class="svc reveal" style="--d:0ms"><span class="svc-n num">٠٧</span><h3>اللوحات الفنية وورق الحائط</h3><p>تصميم وطباعة للوحات الفنية وأوراق الجدران.</p></article>
       <article class="svc reveal" style="--d:70ms"><span class="svc-n num">٠٨</span><h3>الهوية الإعلانية</h3><p>تصميم الهوية البصرية للشركات والمؤسسات.</p></article>
       <article class="svc reveal" style="--d:140ms"><span class="svc-n num">٠٩</span><h3>تنظيم المناسبات</h3><p>تنظيم الاحتفالات والمناسبات الرسمية.</p></article>
     </div>
@@ -335,9 +336,9 @@ footer .cp .en{color:#a29eaa}
   <div class="wrap grid">
     <div class="txt">
       <div class="eyebrow">قسم التصميم والتدريب</div>
-      <h2>نعرض التصاميم على العميل، ونُدرّب الجيل القادم</h2>
-      <p>بيئةٌ مصممةٌ بعناية نستعرض فيها التصاميم أمام العميل قبل التنفيذ، ونُقدّم برامج تدريبٍ متخصصة في التصميم والديكور الداخلي.</p>
-      <div class="note"><div class="st"><svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M50 4 61 24 84 16 76 39 96 50 76 61 84 84 61 76 50 96 39 76 16 84 24 61 4 50 24 39 16 16 39 24Z"/><path fill="none" stroke="currentColor" stroke-width="1" d="M50 20 57 34 72 30 66 44 80 50 66 56 72 70 57 66 50 80 43 66 28 70 34 56 20 50 34 44 28 30 43 34Z"/></svg></div><div>بفخر، احتضنّا تدريبَ الدفعة الأولى من خريجات قسم التصميم بجامعة تبوك.</div></div>
+      <h2>نعرض التصاميم على العميل، وندرب الجيل القادم</h2>
+      <p>بيئة مصممة بعناية نستعرض فيها التصاميم أمام العميل قبل التنفيذ، ونقدم برامج تدريب متخصصة في التصميم والديكور الداخلي.</p>
+      <div class="note"><div class="st"><svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M50 4 61 24 84 16 76 39 96 50 76 61 84 84 61 76 50 96 39 76 16 84 24 61 4 50 24 39 16 16 39 24Z"/><path fill="none" stroke="currentColor" stroke-width="1" d="M50 20 57 34 72 30 66 44 80 50 66 56 72 70 57 66 50 80 43 66 28 70 34 56 20 50 34 44 28 30 43 34Z"/></svg></div><div>بفخر، احتضنا تدريب الدفعة الأولى من خريجات قسم التصميم بجامعة تبوك.</div></div>
     </div>
     <div class="imgs">
       <img src="assets/training-1.jpg" alt="قاعة عرض التصاميم في قسم التدريب">
@@ -349,21 +350,21 @@ footer .cp .en{color:#a29eaa}
 <!-- TRUST -->
 <section id="trust">
   <div class="wrap center">
-    <div class="eyebrow">ثقةٌ نعتزّ بها</div>
-    <h2 class="h-sec">أرقامٌ تختصر رحلتنا</h2>
+    <div class="eyebrow">ثقة نعتز بها</div>
+    <h2 class="h-sec">أرقام تختصر رحلتنا</h2>
     <div class="rule"></div>
   </div>
   <div class="wrap">
     <div class="stats">
-      <div class="stat reveal"><div class="n"><b>١٢٬٠٠٠</b>+</div><div class="l">عميلٍ خدمناهم بفضل الله</div></div>
+      <div class="stat reveal"><div class="n"><b>١٢٬٠٠٠</b>+</div><div class="l">عميل خدمناهم بفضل الله</div></div>
       <div class="stat reveal" style="--d:100ms"><div class="n">٤٫٨<b>★</b></div><div class="l">تقييم العملاء على Google</div></div>
-      <div class="stat reveal" style="--d:200ms"><div class="n">٤٤<b>+</b></div><div class="l">جهةٍ وعلامةٍ وثِقت بنا</div></div>
+      <div class="stat reveal" style="--d:200ms"><div class="n">٤٤<b>+</b></div><div class="l">جهة وعلامة وثقت بنا</div></div>
     </div>
     <div class="guar reveal">
       <div class="badge"><svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M50 4 61 24 84 16 76 39 96 50 76 61 84 84 61 76 50 96 39 76 16 84 24 61 4 50 24 39 16 16 39 24Z"/><path fill="none" stroke="currentColor" stroke-width="1" d="M50 20 57 34 72 30 66 44 80 50 66 56 72 70 57 66 50 80 43 66 28 70 34 56 20 50 34 44 28 30 43 34Z"/></svg></div>
       <div>
-        <h3>الضمان — على جودة المنتج ودقّة التركيب</h3>
-        <p>نستخدم أفضلَ وأجودَ أنواع الخامات، ونتوجّه دائمًا بما يليق بثقة عملائنا. سجلٌّ نظيفٌ بلا نزاعات، وثناءٌ متّصلٌ من الجهات ذات العلاقة.</p>
+        <h3>الضمان على جودة المنتج ودقة التركيب</h3>
+        <p>نستخدم أفضل وأجود أنواع الخامات، ونتوجه دائما بما يليق بثقة عملائنا. سجل نظيف بلا نزاعات، وثناء متصل من الجهات ذات العلاقة.</p>
       </div>
     </div>
   </div>
@@ -373,13 +374,13 @@ footer .cp .en{color:#a29eaa}
 <section id="partners">
   <div class="wrap center">
     <div class="eyebrow">شركاء النجاح</div>
-    <h2 class="h-sec">وثِقت بنا جهاتٌ حكومية وعلاماتٌ رائدة</h2>
+    <h2 class="h-sec">وثقت بنا جهات حكومية وعلامات رائدة</h2>
     <div class="rule"></div>
-    <p class="lead">نفخر بأن نكون تفصيلًا في نجاح شركائنا — من المؤسسات الحكومية إلى أبرز العلامات التجارية في المنطقة.</p>
+    <p class="lead">نفخر بأن نكون تفصيلا في نجاح شركائنا، من المؤسسات الحكومية إلى أبرز العلامات التجارية في المنطقة.</p>
   </div>
   <div class="wrap">
     <div class="pt-group">
-      <div class="pt-lbl">جهاتٌ حكومية <span class="num">(٨)</span></div>
+      <div class="pt-lbl">جهات حكومية <span class="num">(٨)</span></div>
       <div class="pt-grid g-gov">
       <figure class="pt gov reveal" style="--d:0ms"><img loading="lazy" src="assets/gov-1.jpg" alt="جهة حكومية شريكة"></figure>
       <figure class="pt gov reveal" style="--d:40ms"><img loading="lazy" src="assets/gov-2.jpg" alt="جهة حكومية شريكة"></figure>
@@ -392,7 +393,7 @@ footer .cp .en{color:#a29eaa}
       </div>
     </div>
     <div class="pt-group">
-      <div class="pt-lbl">شركاتٌ وعلاماتٌ تجارية <span class="num">(٣٦)</span></div>
+      <div class="pt-lbl">شركات وعلامات تجارية <span class="num">(٣٦)</span></div>
       <div class="pt-grid g-co">
       <figure class="pt reveal" style="--d:0ms"><img loading="lazy" src="assets/client-1.jpg" alt="علامة تجارية شريكة"></figure>
       <figure class="pt reveal" style="--d:40ms"><img loading="lazy" src="assets/client-2.jpg" alt="علامة تجارية شريكة"></figure>
@@ -439,13 +440,13 @@ footer .cp .en{color:#a29eaa}
 <section id="contact">
   <div class="wrap center">
     <div class="eyebrow">تواصل معنا</div>
-    <h2 class="h-sec">زُرنا، أو ابدأ مشروعك اليوم</h2>
+    <h2 class="h-sec">زرنا، أو ابدأ مشروعك اليوم</h2>
     <div class="rule"></div>
   </div>
   <div class="wrap grid">
     <div>
       <div class="info-row"><div class="ic"><svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M50 4 61 24 84 16 76 39 96 50 76 61 84 84 61 76 50 96 39 76 16 84 24 61 4 50 24 39 16 16 39 24Z"/><path fill="none" stroke="currentColor" stroke-width="1" d="M50 20 57 34 72 30 66 44 80 50 66 56 72 70 57 66 50 80 43 66 28 70 34 56 20 50 34 44 28 30 43 34Z"/></svg></div><div><div class="k">العنوان</div><div class="v">شارع خالد بن الوليد، حي المصيف، تبوك <span class="num">47321</span></div></div></div>
-      <div class="info-row"><div class="ic"><svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M50 4 61 24 84 16 76 39 96 50 76 61 84 84 61 76 50 96 39 76 16 84 24 61 4 50 24 39 16 16 39 24Z"/><path fill="none" stroke="currentColor" stroke-width="1" d="M50 20 57 34 72 30 66 44 80 50 66 56 72 70 57 66 50 80 43 66 28 70 34 56 20 50 34 44 28 30 43 34Z"/></svg></div><div><div class="k">أوقات العمل</div><div class="v">يوميًا، من <span class="num">٥:٠٠</span> إلى <span class="num">١٠:٣٠</span> مساءً</div></div></div>
+      <div class="info-row"><div class="ic"><svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M50 4 61 24 84 16 76 39 96 50 76 61 84 84 61 76 50 96 39 76 16 84 24 61 4 50 24 39 16 16 39 24Z"/><path fill="none" stroke="currentColor" stroke-width="1" d="M50 20 57 34 72 30 66 44 80 50 66 56 72 70 57 66 50 80 43 66 28 70 34 56 20 50 34 44 28 30 43 34Z"/></svg></div><div><div class="k">أوقات العمل</div><div class="v">يوميا، من <span class="num">٥:٠٠</span> إلى <span class="num">١٠:٣٠</span> مساء</div></div></div>
       <div class="info-row"><div class="ic"><svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M50 4 61 24 84 16 76 39 96 50 76 61 84 84 61 76 50 96 39 76 16 84 24 61 4 50 24 39 16 16 39 24Z"/><path fill="none" stroke="currentColor" stroke-width="1" d="M50 20 57 34 72 30 66 44 80 50 66 56 72 70 57 66 50 80 43 66 28 70 34 56 20 50 34 44 28 30 43 34Z"/></svg></div><div><div class="k">الهاتف</div><a class="v num" href="tel:+966590599060" dir="ltr">+966 59 059 9060</a></div></div>
       <div class="info-row"><div class="ic"><svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M50 4 61 24 84 16 76 39 96 50 76 61 84 84 61 76 50 96 39 76 16 84 24 61 4 50 24 39 16 16 39 24Z"/><path fill="none" stroke="currentColor" stroke-width="1" d="M50 20 57 34 72 30 66 44 80 50 66 56 72 70 57 66 50 80 43 66 28 70 34 56 20 50 34 44 28 30 43 34Z"/></svg></div><div><div class="k">الموقع الإلكتروني</div><a class="v en" href="https://decorationdetails.com" target="_blank" rel="noopener">decorationdetails.com</a></div></div>
       <div class="socials">
@@ -456,11 +457,11 @@ footer .cp .en{color:#a29eaa}
       </div>
     </div>
     <div class="contact-cta">
-      <h3>نحوّل تفاصيل مكانك إلى تحفة</h3>
-      <p>راسلنا على واتساب وشاركنا فكرتك — نردّ عليك باستشارةٍ أولية وتصوّرٍ مبدئي.</p>
+      <h3>نحول تفاصيل مكانك إلى تحفة</h3>
+      <p>راسلنا على واتساب وشاركنا فكرتك، نرد عليك باستشارة أولية وتصور مبدئي.</p>
       <a class="btn lav" href="https://wa.me/966558113005?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D8%AF%D9%8A%D9%83%D9%88%D8%B1" target="_blank" rel="noopener">محادثة واتساب مباشرة</a>
       <a class="btn ghost" href="https://maps.google.com/?q=تفاصيل+الديكور+تبوك" target="_blank" rel="noopener">الموقع على الخريطة</a>
-      <a class="btn ghost" href="https://linktr.ee/Details.decoration" target="_blank" rel="noopener">تصفّح كل روابطنا</a>
+      <a class="btn ghost" href="https://linktr.ee/Details.decoration" target="_blank" rel="noopener">تصفح كل روابطنا</a>
     </div>
   </div>
 </section>
@@ -469,11 +470,11 @@ footer .cp .en{color:#a29eaa}
   <div class="wrap">
     <div class="emb"><svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M50 4 61 24 84 16 76 39 96 50 76 61 84 84 61 76 50 96 39 76 16 84 24 61 4 50 24 39 16 16 39 24Z"/><path fill="none" stroke="currentColor" stroke-width="1" d="M50 20 57 34 72 30 66 44 80 50 66 56 72 70 57 66 50 80 43 66 28 70 34 56 20 50 34 44 28 30 43 34Z"/></svg></div>
     <img class="wm" src="assets/wordmark-white.png" alt="تفاصيل الديكور">
-    <div class="tag">حينما تلتقي عراقةُ التصميم وهُويةُ التاريخ</div>
+    <div class="tag">حينما تلتقي عراقة التصميم وهوية التاريخ</div>
     <div class="flinks">
       <a href="#story">القصة</a><a href="#work">الأعمال</a><a href="#services">خدماتنا</a><a href="#train">قسم التدريب</a><a href="#partners">شركاء النجاح</a><a href="#contact">تواصل</a>
     </div>
-    <div class="cp"><span class="en">تفاصيل الديكور — Details decoration</span> · تبوك · جميع الحقوق محفوظة <span class="num">٢٠٢٦</span></div>
+    <div class="cp"><span class="en">تفاصيل الديكور · Details decoration</span> · تبوك · جميع الحقوق محفوظة <span class="num">٢٠٢٦</span></div>
   </div>
 </footer>
 
@@ -495,6 +496,8 @@ footer .cp .en{color:#a29eaa}
   if('IntersectionObserver' in window){
     var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
     document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+    var wa=document.querySelector('.wa'),contact=document.getElementById('contact');
+    if(wa&&contact){new IntersectionObserver(function(es){es.forEach(function(e){wa.classList.toggle('hide',e.isIntersecting)})},{threshold:.2}).observe(contact)}
   }else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')})}
 })();
 </script>
