@@ -77,15 +77,19 @@ nav .navcta:hover{background:#fff;color:#000;border-color:#fff}
 .btn.ghost{border-color:rgba(255,255,255,.42);color:#fff}
 .btn.ghost:hover{background:#fff;color:#000}
 
-/* HERO — full cover image, uncropped, on black */
-#hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;background:var(--ink);padding:6rem 0 2.4rem}
-#hero .cover{width:min(860px,92vw);margin-inline:auto}
-#hero .cover img{width:auto;height:auto;max-width:100%;max-height:72vh;margin-inline:auto;border-radius:6px;box-shadow:0 40px 90px -40px rgba(0,0,0,.9)}
-#hero .kick{font-family:var(--kufi);font-weight:700;font-size:.95rem;color:var(--lav2);margin:1.8rem 0 1rem;text-align:center}
-#hero .ctas{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap}
-#hero .rate{display:flex;align-items:center;justify-content:center;gap:.5rem;margin-top:1.5rem;font-size:.9rem;color:var(--muted);font-family:var(--kufi);font-weight:500}
+/* HERO — design 6: complete photo full width (no crop) on all devices, content below */
+#hero{position:relative;background:#000;text-align:center;overflow:hidden}
+#hero .bg{position:relative;width:100%;line-height:0;font-size:0}
+#hero .bg img{width:100%;height:auto;display:block}
+#hero .bg::after{content:"";position:absolute;left:0;right:0;bottom:-1px;top:auto;height:26%;background:linear-gradient(180deg,transparent,#000);pointer-events:none;z-index:1}
+#hero .hero-inner{position:relative;z-index:2;max-width:760px;margin-inline:auto;padding:0 1.2rem 3.8rem;margin-top:clamp(-8rem,-7vw,-2.4rem)}
+#hero .wm{height:auto;width:min(200px,44vw);margin:0 auto .9rem;filter:drop-shadow(0 5px 22px rgba(0,0,0,.92))}
+#hero .kick{font-family:var(--kufi);font-weight:700;font-size:.85rem;color:var(--lav2);margin-bottom:.6rem;text-shadow:0 1px 10px rgba(0,0,0,.9)}
+#hero .htitle{font-size:clamp(1.15rem,2.6vw,1.7rem);font-weight:700;line-height:1.55;max-width:24ch;margin:0 auto 1.4rem;color:#fff;text-shadow:0 2px 20px rgba(0,0,0,.95)}
+#hero .ctas{display:flex;gap:.65rem;justify-content:center;flex-wrap:wrap}
+#hero .ctas .btn{padding:.66rem 1.25rem;font-size:.88rem}
+#hero .rate{display:flex;align-items:center;justify-content:center;gap:.5rem;margin-top:1.25rem;font-size:.82rem;color:#ddd9d1;font-family:var(--kufi);font-weight:500}
 #hero .rate b{color:#fff;font-weight:700}
-
 /* STORY — full image + zoom */
 #story .story-fig{position:relative;width:min(760px,92vw);margin:2.4rem auto 0;cursor:zoom-in;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:#fff}
 #story .story-fig img{width:100%;height:auto;display:block}
@@ -183,7 +187,7 @@ footer .cp .en{color:var(--dim)}
   .pt-grid.g-co,.pt-grid.g-gov{grid-template-columns:repeat(3,1fr)}
   .stats{grid-template-columns:1fr;gap:.4rem}
   .guar{grid-template-columns:1fr;text-align:center;justify-items:center}
-  #hero .cover img{max-height:64vh}
+  #hero .wm{width:min(150px,42vw)}
 }
 @media (max-width:520px){
   body{font-size:16px}
@@ -192,6 +196,20 @@ footer .cp .en{color:var(--dim)}
   #hero .ctas{flex-direction:column}
   #hero .ctas .btn{width:100%;justify-content:center}
 }
+
+/* PROJECTS — مشاريع نفخر بها */
+#projects .proud{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:2.6rem}
+#projects .proud-panel{position:relative;margin:0;border:1px solid var(--line);border-radius:8px;overflow:hidden;cursor:zoom-in;background:var(--card)}
+#projects .proud-panel img{width:100%;height:auto;display:block;transition:transform .8s var(--ease)}
+#projects .proud-panel:hover img{transform:scale(1.03)}
+#projects .proud-panel .zc{position:absolute;inset-block-start:12px;inset-inline-end:12px;width:36px;height:36px;display:grid;place-items:center;border-radius:50%;background:rgba(0,0,0,.55);color:#fff;opacity:0;transition:.3s}
+#projects .proud-panel:hover .zc{opacity:1}
+#projects .pstats{display:flex;gap:2.4rem;justify-content:center;flex-wrap:wrap;margin-top:2.4rem}
+#projects .pstat{text-align:center}
+#projects .pstat .n{font-family:var(--kufi);font-weight:700;font-size:clamp(1.8rem,4vw,2.6rem);color:#fff;direction:ltr}
+#projects .pstat .n b{color:var(--lav2)}
+#projects .pstat .l{color:var(--muted);font-family:var(--kufi);font-weight:500;font-size:.92rem;margin-top:.3rem}
+@media(max-width:700px){#projects .proud{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -202,6 +220,7 @@ footer .cp .en{color:var(--dim)}
     <ul>
       <li><a href="#story">القصة</a></li>
       <li><a href="#work">أعمالنا</a></li>
+      <li><a href="#projects">مشاريعنا</a></li>
       <li><a href="#services">خدماتنا</a></li>
       <li><a href="#partners">شركاء النجاح</a></li>
       <li><a href="https://decorationdetails.com" target="_blank" rel="noopener">المتجر</a></li>
@@ -214,24 +233,27 @@ footer .cp .en{color:var(--dim)}
   <button class="close" id="mclose" aria-label="إغلاق">×</button>
   <a href="#story">القصة</a>
   <a href="#work">أعمالنا</a>
+  <a href="#projects">مشاريع نفخر بها</a>
   <a href="#services">خدماتنا</a>
   <a href="#partners">شركاء النجاح</a>
   <a href="https://decorationdetails.com" target="_blank" rel="noopener">متجر اللوحات</a>
   <a href="#contact">تواصل معنا</a>
 </div>
 
-<!-- HERO -->
+<!-- HERO (design 4: cinematic) -->
 <header id="hero">
-  <figure class="cover reveal in">
-    <img src="assets/hero-cover.jpg" alt="واجهة مركز تفاصيل الديكور في تبوك" fetchpriority="high">
-  </figure>
-  <div class="kick">مركز الديكور الداخلي والفنون · تبوك</div>
-  <div class="ctas">
-    <a class="btn lav" href="https://wa.me/966558113005?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D8%AF%D9%8A%D9%83%D9%88%D8%B1" target="_blank" rel="noopener">تواصل عبر واتساب</a>
-    <a class="btn ghost" href="https://decorationdetails.com" target="_blank" rel="noopener">متجر اللوحات</a>
-    <a class="btn ghost" href="https://www.instagram.com/decorationdetails.s/" target="_blank" rel="noopener">انستقرام</a>
+  <div class="bg"><img src="assets/hero6b.jpg" alt="واجهة مركز تفاصيل الديكور في تبوك" fetchpriority="high"></div>
+  <div class="hero-inner reveal in">
+    <img class="wm" src="assets/logo-official.png" alt="تفاصيل الديكور Details decoration">
+    <div class="kick">مركز الديكور الداخلي والفنون · تبوك</div>
+    <h1 class="htitle">حينما تلتقي عراقة التصميم وهوية التاريخ</h1>
+    <div class="ctas">
+      <a class="btn lav" href="https://wa.me/966558113005?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D8%AF%D9%8A%D9%83%D9%88%D8%B1" target="_blank" rel="noopener">تواصل عبر واتساب</a>
+      <a class="btn ghost" href="https://decorationdetails.com" target="_blank" rel="noopener">متجر اللوحات</a>
+      <a class="btn ghost" href="https://www.instagram.com/decorationdetails.s/" target="_blank" rel="noopener">انستقرام</a>
+    </div>
+    <div class="rate">تقييم <b class="num">٤٫٨</b> ★ على <span class="en">Google</span> · <span class="num">٤٤+</span> شريك نجاح</div>
   </div>
-  <div class="rate">تقييم <b class="num">٤٫٨</b> ★ على <span class="en">Google</span> · <span class="num">٤٤+</span> شريك نجاح</div>
 </header>
 
 <!-- STORY -->
@@ -266,6 +288,24 @@ footer .cp .en{color:var(--dim)}
     </div>
     <div class="ig-cta">
       <a class="ig-btn" href="https://www.instagram.com/decorationdetails.s/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.25.06-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.15 0-3.52.01-4.76.07-.9.04-1.38.19-1.71.32-.43.17-.74.37-1.06.69-.32.32-.52.63-.69 1.06-.13.33-.28.81-.32 1.71C3.4 8.48 3.4 8.85 3.4 12s0 3.52.06 4.76c.04.9.19 1.38.32 1.71.17.43.37.74.69 1.06.32.32.63.52 1.06.69.33.13.81.28 1.71.32 1.24.06 1.61.07 4.76.07s3.52 0 4.76-.07c.9-.04 1.38-.19 1.71-.32.43-.17.74-.37 1.06-.69.32-.32.52-.63.69-1.06.13-.33.28-.81.32-1.71.06-1.24.07-1.61.07-4.76s0-3.52-.07-4.76c-.04-.9-.19-1.38-.32-1.71a2.85 2.85 0 0 0-.69-1.06 2.85 2.85 0 0 0-1.06-.69c-.33-.13-.81-.28-1.71-.32C15.52 4.01 15.15 4 12 4Zm0 3.07a4.93 4.93 0 1 1 0 9.86 4.93 4.93 0 0 1 0-9.86Zm0 1.8a3.13 3.13 0 1 0 0 6.26 3.13 3.13 0 0 0 0-6.26Zm5.14-2.02a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3Z"/></svg> تابعنا على انستقرام</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap center">
+    <h2 class="h-sec">مشاريع نفخر بها</h2>
+    <div class="rule"></div>
+  </div>
+  <div class="wrap">
+    <div class="proud">
+      <figure class="proud-panel zoomable reveal" data-full="assets/proud-1.jpg"><img loading="lazy" src="assets/proud-1.jpg" alt="مشاريع تفاصيل الديكور — قاعات ومسارح مدارس الملك عبدالعزيز النموذجية"><span class="zc"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M10 4h4M4 10v4M20 10v4M10 20h4M6 6l2 2M18 6l-2 2M6 18l2-2M18 18l-2-2"/><circle cx="12" cy="12" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></figure>
+      <figure class="proud-panel zoomable reveal" data-full="assets/proud-2.jpg" style="--d:80ms"><img loading="lazy" src="assets/proud-2.jpg" alt="مشاريع تفاصيل الديكور — منصّات جوائز التفوّق العلمي"><span class="zc"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M10 4h4M4 10v4M20 10v4M10 20h4M6 6l2 2M18 6l-2 2M6 18l2-2M18 18l-2-2"/><circle cx="12" cy="12" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></figure>
+    </div>
+    <div class="pstats">
+      <div class="pstat reveal"><div class="n"><b>١٤</b>+</div><div class="l">عامًا في التصميم والإشراف</div></div>
+      <div class="pstat reveal" style="--d:90ms"><div class="n"><b>٥٠</b>+</div><div class="l">مشروعًا ومنصّة كبرى</div></div>
     </div>
   </div>
 </section>
@@ -415,7 +455,7 @@ footer .cp .en{color:var(--dim)}
     <img class="footer-logo" src="assets/logo-official.png" alt="تفاصيل الديكور Details decoration">
     <div class="tag">حينما تلتقي عراقة التصميم وهوية التاريخ</div>
     <div class="flinks">
-      <a href="#story">القصة</a><a href="#work">أعمالنا</a><a href="#services">خدماتنا</a><a href="#partners">شركاء النجاح</a><a href="https://decorationdetails.com" target="_blank" rel="noopener">المتجر</a><a href="#contact">تواصل</a>
+      <a href="#story">القصة</a><a href="#work">أعمالنا</a><a href="#projects">مشاريعنا</a><a href="#services">خدماتنا</a><a href="#partners">شركاء النجاح</a><a href="https://decorationdetails.com" target="_blank" rel="noopener">المتجر</a><a href="#contact">تواصل</a>
     </div>
     <div class="cp"><span class="en">تفاصيل الديكور — Details decoration</span> · تبوك · جميع الحقوق محفوظة <span class="num">٢٠٢٦</span></div>
   </div>
